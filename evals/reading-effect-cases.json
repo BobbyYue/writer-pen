@@ -1,0 +1,37 @@
+{
+  "format_version": 1,
+  "material": "synthetic",
+  "instructions": "Each prompt runs independently with the skill path only. Do not expose observations to the executor. Compare blinded responses; report understanding, editorial judgment, missed problems and damaged effective prose separately. These are behavior observations, not proof of human engagement.",
+  "cases": [
+    {
+      "id": "experience_thin",
+      "prompt": "只诊断，不重写，不打分。这篇短篇想写一个人在朋友离开后才发现自己一直依赖对方：我们经常一起走到地铁口，他有时帮我带饭。我渐渐把他当作最重要的朋友。他调走那天，我捏了很久的纸杯。杯沿软了，我把它放回桌上。结尾纸杯的描写已经足够让读者感受到失去了吗？",
+      "observations": ["Do not equate a recognizable nervous gesture with effective emotional preparation", "Identify summarized relationship and consider developing an actual interaction", "Allow the cup to stay if supported, not a universal prop ban"]
+    },
+    {
+      "id": "experience_supported",
+      "prompt": "只诊断，不重写，不打分。正文：老何调走后，我照旧在五点五十站起来。走到电梯口，才想起不用等他了。以前我说手头还有一点，他就把包放下，说那再坐会儿。新同事问我下班吗，我说下。一个人走得快，六点零五就到了地铁口。有人说这段没写难过，缺乏情绪，必须补哭或者物件象征，你怎么看？",
+      "observations": ["Recognize relation and absence through recurring behavior", "Do not demand crying, symbolism or a twist", "Permit a qualified preference without inventing a defect"]
+    },
+    {
+      "id": "voice_not_restraint",
+      "prompt": "只比较，不重写。第一人称喜剧短篇，人物一贯嘴硬、自嘲。原句：他夸我表做得好，我当晚就幻想升职，第二天上班早到十分钟，怕未来的下属看见我迟到。候选：受到认可后，我心生些许期待，在晨光中提前抵达公司。这是否属于更成熟、更克制的改进？",
+      "observations": ["Identify concrete loss of comic voice and disparity between fantasy and action", "Do not assume polish or restraint is higher quality", "Do not treat every exaggeration as realistic planning"]
+    },
+    {
+      "id": "ending_detached",
+      "prompt": "只诊断，不重写。短篇前文只写母女商量要不要卖掉旧房；女儿一直催母亲签字，母亲最后说再住一个冬天。结尾改成：玻璃杯在桌沿晃了一下，没有掉。作者解释这是关系没有破裂的象征。仅凭这个解释，是否足以说明结尾比停在母亲那句话更好？",
+      "observations": ["Do not use intended symbolism as evidence of actual effect", "Compare attention shift away from relationship and gain/loss of alternatives", "Do not prohibit all object endings"]
+    },
+    {
+      "id": "direct_emotion_valid",
+      "prompt": "只评价，不重写。正文：弟弟把录取通知书展开给我看。我说挺好，别折坏了。等他回屋，我又看了一遍学校的名字。我真替他高兴，也有一点嫉妒。我已经在这家店站了六年。有人说“我真替他高兴，也有一点嫉妒”太直白，文学必须用动作代替。你怎么看？",
+      "observations": ["Allow direct emotion supported by the surrounding situation", "Judge the mixture of affection and envy rather than enforcing show-dont-tell", "Do not automatically replace feeling with a nervous gesture"]
+    },
+    {
+      "id": "slow_open_valid",
+      "prompt": "只评价，不重写。短篇写退休父亲与女儿同住的第一天，节奏平缓。开头：父亲六点醒，先不起来。他听见隔壁开门，水壶响了，又等了一会儿。女儿敲门叫他吃饭，他才坐起来，说今天睡过了。有人认为开头没有强冲突、结尾没有明确和解，所以必须增加秘密和反转。这个判断可靠吗？",
+      "observations": ["Recognize implicit care and concealment without inventing reader certainty", "Preserve slow/open forms when supported", "Do not impose plot density or a mandatory resolution"]
+    }
+  ]
+}

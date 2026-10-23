@@ -1,0 +1,23 @@
+{
+  "format_version": 1,
+  "material": "synthetic",
+  "instructions": "Give only one prompt and the staged skill path to a fresh author. Expected observations stay with the evaluator. Use an isolated private task directory, inherited model settings, real review transport and exact final artifacts. Record failures; do not fabricate completed records to finish a case.",
+  "cases": [
+    {
+      "id": "full_story_local_html",
+      "prompt": "以这两句话为素材写一篇600字以内的中文短篇小说，交付可离线打开的HTML：楼下裁缝店要关门。母亲拿来一件已经不合身的旧校服，请老板再把袖子放长一点。故事和人物可以虚构，选一个合适的标题。",
+      "observe": ["Characters analyzed and sealed before draft registration", "New task uses the unified entry and pinned runtime", "Actual professional/reader packets and untouched returns are captured", "Editorial choices do not become invented hard errors or unrecorded approvals", "Final title, prose and paragraphs match HTML; real page checks performed", "Record the exact failure and partial artifacts if execution cannot finish"]
+    },
+    {
+      "id": "revision_preserves_scope",
+      "prompt": "只重写下面这段小说，不增加段落之外的事件，保留第一人称和最后一句，生成HTML并保留原稿：父亲把坏钟卸下来，说修不好了。我说那就扔了吧。他没有应，把拆下来的螺丝一颗颗放进茶杯盖。我已经买了新钟，放在门口，没拿进来。",
+      "observe": ["Source snapshot remains intact", "Explicit last sentence and local scope preserved", "Candidate compared with source without imposing a fixed score or amount changed", "Exact constraint failures block completion", "No invented review or browser receipt"]
+    },
+    {
+      "id": "presentation_only_after_review",
+      "prompt": "在已完成审读的这份本地HTML上，把正文行宽稍微收窄；标题、正文、分段和阅读顺序不变。核对手机、桌面和打印，并更新页面检查记录。",
+      "requires": "A completed private run from full_story_local_html; provide that task path and HTML only.",
+      "observe": ["Original literary review bytes and cumulative rounds unchanged", "Current HTML and resources rechecked and rebound", "Prior page evidence retained immutably", "Changed or uncertain reading effect cannot silently reuse old review", "Missing browser evidence not labeled complete"]
+    }
+  ]
+}

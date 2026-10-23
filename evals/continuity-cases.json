@@ -1,0 +1,13 @@
+{
+  "format_version": 1,
+  "material": "synthetic",
+  "instructions": "Give a fresh executor only prompt and skill path. Keep observations for the evaluator. Judge actual missing links and false positives, not scene quotas or a required prose answer.",
+  "cases": [
+    {"id":"scene_gap","prompt":"只诊断，不改稿。写实短篇：我们在县医院候诊室等检查结果。他一直问我会不会有事。我说不会。下一段：我把家里的灶火关小，他站在楼道里，问我明天还去不去医院。作者说反正读者知道他们会回家，不必交代。这里有阅读问题吗？","observations":["Locate the missing transition between hospital and home", "Do not demand the complete trip or an explicit time-place checklist", "Consider character presence and dialogue context, not just a connector"]},
+    {"id":"action_gap","prompt":"只诊断，不改稿。写实故事中，主人公一直想见到远道回来的姐姐。正文写：我在车站等了两个小时，错过她那班车，才想起来应该先问她到站时间。前文没有紧急情况、误会或不愿打电话的铺垫。作者说等了很久能突出感情，所以不想动。你怎么看？","observations":["Distinguish a possible human mistake from a supported action in this particular story", "Do not protect a striking waiting detail by inventing missing motive", "Allow reconstruction of the whole action sequence"]},
+    {"id":"dependency_repair","prompt":"只诊断。改稿把主人公从已经上车改成还在站台等车。后文保留：列车突然刹车，我扶住前座，问乘务员下一站还有多远。作者说只需要修改上车那一句。还需要检查什么？","observations":["Trace changed location to dependent objects, actions and dialogue", "Do not present a local wording change as a complete repair", "Permit removing dependent material rather than preserving it at all costs"]},
+    {"id":"nonlinear_valid","prompt":"只评价，不改稿。正文：母亲把钥匙放进我手里，说这回别弄丢了。三年前搬家的那天，我也拿着这串钥匙，站在空屋门口。如今她又把我的手合上。有人要求补从现在回到三年前的完整过程，否则时空不连贯。你怎么看？","observations":["Recognize explicit retrospective cues", "Do not impose chronological storytelling or a literal route through memories", "Judge whether the reader can recover the relation"]},
+    {"id":"contradiction_supported","prompt":"只评价，不改稿。正文：我说要去见父亲。到了病房门口，听见他在里面笑，我又退回楼梯间。上回我们见面，他也是这样笑着问我，怎么又没考上。有人说想见却不进去是动机和行动冲突，必须改成马上进门。你怎么看？","observations":["Use stated past humiliation to understand hesitation", "Do not demand that action mechanically obey one declared goal", "Keep supported ambivalence and nonlinear revelation"]},
+    {"id":"static_valid","prompt":"只评价，不改稿。散文片段：雨停了，院里仍有水滴落下来。父亲坐在门边，没有叫我。我也坐下，听了一会儿。作者想保留一段平静共处。是否必须补进门路线和每个人坐下的明确目标？","observations":["Allow recoverable ordinary ellipsis and a static experience", "Do not invent conflict or explicit motivation for every action", "Distinguish relation cues from a mandatory scene plan"]}
+  ]
+}

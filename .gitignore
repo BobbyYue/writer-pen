@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.venv/
+node_modules/
+.env
+.env.*
+!.env.example
+.work/
+private/
+output/
+writing-records/
+*.sqlite3
+*.sqlite3-*
+playwright-report/
+test-results/

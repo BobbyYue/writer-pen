@@ -1,0 +1,37 @@
+{
+  "format_version": 1,
+  "material": "synthetic",
+  "instructions": "Pass only prompt and skill path to a fresh executor. Keep observations for the evaluator. Report actual findings and false positives, not a required rewrite or a quality score.",
+  "cases": [
+    {
+      "id": "conclusion_without_development",
+      "prompt": "只诊断，不改稿。素材说：同事替我换过一次班，我从此把他当成可以托付一生的朋友。小说正文目前只写他答应换班，我感激，随后就认定他是终身知己。作者说既然素材这样写，就必须保留。你怎么看？",
+      "observations": ["Separate supplied conclusion from an explicit user requirement", "Diagnose missing psychological development, not just awkward phrasing", "Permit development, reshaping or omission without forcing extra scenes"]
+    },
+    {
+      "id": "earned_misjudgment",
+      "prompt": "只诊断，不改稿。片段：我爸住院那几天，他每天替我换班。我说等我爸出院就请你喝酒，他说有空再说。我后来打算跟他合开小店，连租金都查了；他还不知道。作者想写叙述者把患难里的帮助想成长期伙伴关系。有人说对方没答应合伙，所以这个念头绝对不能出现。你怎么看？",
+      "observations": ["Distinguish understandable overexpectation from a factually shared commitment", "Use accumulated experience and unilateral action as evidence", "Allow an editorial reservation without insisting every misunderstanding be corrected"]
+    },
+    {
+      "id": "comic_shortcut_valid",
+      "prompt": "只比较，不改稿。喜剧口吻的素材：主管夸我两句，我已经在想退休宴请他坐主桌。正文：主管说我这份表不错。我问年终奖怎么算，他让我先把实习考核过了。作者想保留夸张的职场自嘲，却不照搬退休宴。有人说漏了素材里的退休宴，必须补三段工作铺垫后写回去。你怎么看？",
+      "observations": ["Preserve the comic mechanism rather than enforce literal material coverage", "Do not impose realistic career preparation on comic exaggeration", "Allow a different expression serving the work"]
+    },
+    {
+      "id": "explicit_constraint_preserved",
+      "prompt": "用户明确要求小说最后必须写主人公决定离乡，其他内容可调整。现稿前文全是安稳日常，末尾突然说他买了离乡的票。只诊断并提出改法，不写正文。能否为避免突兀直接删掉这个结尾？",
+      "observations": ["Preserve the actually fixed ending", "Develop or reorganize motivation instead of removing an explicit requirement", "Do not invent a universal minimum buildup length"]
+    },
+    {
+      "id": "static_direct_prose_valid",
+      "prompt": "只诊断。散文：我一直不喜欢这条路。到了冬天，风从桥洞里往外钻，等车的人都背过身去。我也背过去，看着便利店的灯。有人要求删掉首句，增加一个完整事件，否则情绪没有铺垫。这是否必要？",
+      "observations": ["Allow supported direct narration and atmosphere", "Do not manufacture a plot, turning point or full event", "Judge actual reader loss instead of treating every conclusion as suspect"]
+    },
+    {
+      "id": "nonfiction_no_fabricated_support",
+      "prompt": "非虚构回忆，只允许材料内事实。素材只记得邻居借过一次伞，我当时很感激，后来断了联系。作者想写成多年互相照顾的深厚友情。只诊断并给处理方向。",
+      "observations": ["Do not invent years of support in nonfiction", "Narrow the claim or request genuine additional material", "Do not treat material selection as permission to fabricate"]
+    }
+  ]
+}

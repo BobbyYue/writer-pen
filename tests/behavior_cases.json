@@ -1,0 +1,91 @@
+{
+  "format_version": 1,
+  "material": "synthetic",
+  "instructions": "Give only prompt and the skill path to the writer. Expectations are for the evaluator, not the writer. No unique prose answer is prescribed.",
+  "cases": [
+    {
+      "id": "knowledge_missing",
+      "pair": "knowledge",
+      "prompt": "只诊断，不重写。写实小说设定：阿林九点尚不知道箱子是谁的，十点才第一次从管理员那里获知属于周叔。正文：九点，阿林摸了摸箱盖，说：周叔这箱子可真沉。这段有问题吗？",
+      "expectations": ["Identify knowledge appearing in dialogue before it was obtained", "Do not invent a prior conversation to excuse the gap"]
+    },
+    {
+      "id": "knowledge_supported",
+      "pair": "knowledge",
+      "prompt": "只诊断，不重写。正文：八点半，管理员指着箱子说，这是周叔的，替他看一会儿。九点，阿林摸了摸箱盖，说：周叔这箱子可真沉。这段有没有人物提前知道信息的问题？",
+      "expectations": ["Recognize that ownership was established", "Do not invent a continuity error merely to produce a critique"]
+    },
+    {
+      "id": "knowledge_paraphrase",
+      "pair": "knowledge",
+      "prompt": "只诊断知情范围。管理员先告诉阿林箱子属于周叔。半小时后阿林抱着箱子说，周叔到底装了什么，怎么这么重。这个问句是否说明他无缘无故知道了箱子的内容？",
+      "expectations": ["Distinguish wondering about contents from knowing contents", "Avoid a false positive caused by wording"]
+    },
+    {
+      "id": "deletion_choice",
+      "pair": "deletion",
+      "prompt": "帮我比较两段，不打分。这一场要写她怕吃亏却仍作出选择。原稿：客人多付了五十块。她把钱在围裙里攥了一会儿，明天的摊位费正缺这张。人已经走到路口，她还是追了出去。回来时，她低声骂了自己一句。短稿：客人多付了五十块。她追出去还了钱，回来继续收摊。删短有没有损失？",
+      "expectations": ["Compare the cost and hesitation, not only factual completeness", "Identify concrete loss without treating all deletion as forbidden"]
+    },
+    {
+      "id": "deletion_redundant",
+      "pair": "deletion",
+      "prompt": "比较这两句，目标是自然不抒情，不用评分。原句：吃饭的时候，他在吃饭的过程中看了三次手机，说只是想看看时间。候选：一顿饭，他看了三次手机，说只是看时间。后文：钟就在他头顶，整点还会响。哪句更合适？",
+      "expectations": ["Recognize the redundant eating phrase", "Allow a small concrete improvement without score increases or added plot"]
+    },
+    {
+      "id": "development_supported",
+      "pair": "development",
+      "prompt": "只分析。写前笔记把她理解为回避冲突的人，这不是固定设定。正文：她听见邻居摔东西，手指照旧摸向电视音量键。孩子喊了一声救命。她站到门口，又退回来，先拨了报警电话，再走上楼，敲门时手还在抖。是否必须改回不敲门才符合人物？",
+      "expectations": ["Recognize supported development with residual fear", "Treat prewriting interpretation as revisable, not an immutable character law"]
+    },
+    {
+      "id": "development_missing",
+      "pair": "development",
+      "prompt": "只分析。写前她是回避冲突的人，小说未出现其他触发。正文：她把电视声调大，免得听见楼上争吵。下一段：她突然明白人就该勇敢，从此无论谁争吵，她都会立刻冲上去主持公道。这种转变有没有缺口？",
+      "expectations": ["Identify unsupported scale and permanence of the transformation", "Do not claim a diagnosis of the author"]
+    },
+    {
+      "id": "opening_effective",
+      "pair": "opening",
+      "prompt": "这段开头要不要改？目标是老夫妻的别扭和亲近，不要悬疑化。老陈退休那天，把厂里带回来的茶缸放进碗柜。妻子挪出去，他又放回来。上班用的，放这儿干什么。不上了。妻子没再挪，只把自己的杯子往旁边让了让。只判断，合适就保留。",
+      "expectations": ["Allow the effective original to remain", "Explain the relation between objects, dialogue and relationship without forced suspense"]
+    },
+    {
+      "id": "opening_score_requested",
+      "pair": "opening",
+      "prompt": "请用十档分别评继续阅读欲望和人物声音，不要总分，再选开头。后文只有母女处理旧裙子，没有秘密或大反转。原开头：母亲把裙子又拿到灯下。我说补不了，她说先把灯开亮点。新开头：那天我发现了她惊天的秘密，人生再也回不去了。",
+      "expectations": ["Use requested integer dimensions with textual reasons", "Check promises against supplied continuation instead of choosing a hook by score alone"]
+    },
+    {
+      "id": "nonfiction_boundary",
+      "pair": "authority",
+      "prompt": "这是纪实回忆，只润色，不补事件：父亲把旧表交给我。我不记得他当时说了什么。请改得自然一点，只给正文。",
+      "expectations": ["Do not invent remembered dialogue or motives", "Preserve uncertainty and requested small scope", "Do not force a full writing-record workflow on a tiny edit"]
+    },
+    {
+      "id": "reaction_degree_missing",
+      "pair": "reaction_degree",
+      "prompt": "只诊断这段写实小说的人物，不重写：小方第一次去社区合唱团，平时怕给人添麻烦，不熟的人多问一句他也会不好意思。散场时，坐旁边的人夸他今天唱得稳，还不知道对方叫什么，他已经在回家的公交车上挑好了两人合租的街区，盘算如果对方嫌贵，该怎样劝。叙述者说：我就是容易把客气当成喜欢。这段人物写得成立吗？",
+      "expectations": ["Examine the degree and specificity of planning against the minimal interaction and existing hesitation", "Do not accept the explanatory label as sufficient textual support", "Allow deletion or a smaller reaction rather than inventing backstory solely to excuse the line", "Do not treat such a reaction as impossible for every fictional person"]
+    },
+    {
+      "id": "reaction_degree_supported",
+      "pair": "reaction_degree",
+      "prompt": "只诊断这段写实小说的人物，不重写：阿敏连续三个月收不到工钱，房东说周五再不交就换锁。她连着几夜醒来数零钱，给母亲打电话总说够用。今天老板在群里回了个再等等。她在楼道站了很久，听见有人过来，把手机翻过来，蹲在台阶上哭得停不下来。有人觉得只因四个字就哭成这样太夸张，你怎么看？",
+      "expectations": ["Read the small immediate trigger together with accumulated material stakes and concealed distress", "Do not mechanically weaken supported emotion", "Ground the judgment in the supplied prose, allowing reasonable reader disagreement"]
+    },
+    {
+      "id": "reaction_comic_voice",
+      "pair": "reaction_style",
+      "prompt": "只比较表达，不重写。小说是第一人称喜剧，开头：我迟到两分钟，脑内已经演完了辞职、破产和流落街头三部曲。经理只让我先签到。后文写我总把打喷嚏当成绝症预告，体检单一到却拖着不拆；表面装得很镇定，夸张念头从不落实。这种程度是否必须收掉，改得更克制才可信？",
+      "expectations": ["Recognize established comic exaggeration and the gap between thoughts and action", "Do not impose restrained realism on a consistent comic voice", "Still assess whether the device becomes repetitive rather than granting blanket exemption"]
+    },
+    {
+      "id": "reaction_source_expansion",
+      "pair": "reaction_style",
+      "prompt": "只比较改写取舍，不生成全文。素材里的自嘲是：那天团建被同事夸了两句，我差点以为自己能当主管。要改成写实短篇，前文只有他第一次参加部门活动，刚入职且很怕出错。候选稿把它展开为：他把下季度的排班改好了，逐个拟了同事拒绝加班时的应对话术，回家还练了三遍训话。原材料本来就有夸张，是否足以说明这个展开可以直接采用？",
+      "expectations": ["Distinguish rhetorical self-mockery from concrete repeated preparation", "Reassess the expanded version against current character and narrative voice", "Do not treat source presence or expressive purpose as automatic justification", "Leave room for another coherent stylistic or character choice without adding ad hoc premises"]
+    }
+  ]
+}

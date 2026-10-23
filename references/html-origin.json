@@ -1,0 +1,13 @@
+{
+  "observed_date": "2026-10-22",
+  "source_skill": "reader-seat",
+  "integration": "Bundled adaptation, not a runtime dependency on reader-seat or html-report",
+  "sources": [
+    {"path": "scripts/validate_html_output.py", "sha256": "ebe741102af61bfa6a30ddecd6944a5d762ecd640f383f4c81c6913e47692aa5", "use": "Adapted portability, anchors, assets, citations and table checks; added exact literary text and paragraph binding"},
+    {"path": "assets/html/report-template.html", "sha256": "957781bebfa779b3f88426a3b968b4a90435218ec7b6b74b221ea4f4414b47ca", "use": "Adapted variables, responsive content width, focus and print mechanics; replaced report layout with continuous literary reading"},
+    {"path": "references/html-output.md", "sha256": "c38874a2e8681337ac2c41f4a3bb49cc31329354c0ac1b00dce1905a0ed824ea", "use": "Portable directory, no CDN, local rendering, real-browser verification"},
+    {"path": "references/reading-path-layout.md", "sha256": "2de189c415ead425446f307487bdd8e4dc54977a47297738cf7eee3b1dc0062f", "use": "Adjacency, hierarchy and spacing relationships only"}
+  ],
+  "not_transferred": ["Functional report scenarios", "Conclusion-first literary body", "Four business-document reviewers", "Factual reporting constraints on fiction", "Mandatory evidence visuals or source lists", "Unused fonts and chart libraries"],
+  "boundaries": ["No publication permission", "Static checks do not establish browser rendering", "Version binding does not establish literary merit", "New or changed prose still uses writer-pen's existing review process"]
+}

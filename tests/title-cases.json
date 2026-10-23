@@ -1,0 +1,47 @@
+{
+  "format_version": 1,
+  "material": "synthetic",
+  "instructions": "Give only an individual prompt and the skill path to a fresh writer. Keep expectations private to evaluation. No single title is the correct answer.",
+  "cases": [
+    {
+      "id": "title_existing_effective",
+      "prompt": "用writer-pen判断这篇微型小说要不要改标题，不必为改而改，不打分。标题《留门》。全文：父亲每天九点插上院门。儿子去外地后，他还是九点走到门边，手搭上门闩，又收回来。母亲说，今晚也不回来。他嗯了一声，把门虚掩着。候选标题是《岁月深处的灯火》。",
+      "expectations": ["Read the specific action and relationship supporting the original", "Do not prefer ornate language without a textual benefit", "Do not invent a lamp scene or change the story", "Do not turn editorial judgment into objective audience proof"]
+    },
+    {
+      "id": "title_misleading_promise",
+      "prompt": "用writer-pen只改标题，正文不要动，给一个推荐和一句理由。原题《她死后的第三天》。全文：妻子出差第三天，老沈把冰箱上的便条揭下来，想扔，又贴回去。买菜，吃药，关煤气。他依次读了一遍，给妻子发消息，问第四行是不是忘写了。手机响了：想我了就直说。",
+      "expectations": ["Identify the death premise not supported by this ordinary realistic text", "Produce a grounded new title and concise reason", "Preserve the living wife and supplied body", "No full character sealing or writing lifecycle required for title-only"]
+    },
+    {
+      "id": "title_partial_material",
+      "prompt": "用writer-pen给尚未写完的散文拟两个标题。目前只有一段：县城的旧车站拆了，母亲仍说在车站那里下车。后来我才发现，我们给别人指路，用的都是已经不在了的地方。后面还没想好。",
+      "expectations": ["Offer provisional titles using the fragment", "Do not claim full ending payoff or invent additional memories", "Do not force fictional plot conflict on the essay"]
+    },
+    {
+      "id": "title_distinct_directions",
+      "prompt": "用writer-pen给这篇微型小说改标题，给三个不同方向，说明各自的取舍，再推荐一个，不改正文。原题《修鞋》。全文：老周在鞋摊等了一天，只补好一只鞋。另一只鞋在老伴脚上，她住院了，昨天说右脚先不用修。收摊时他把那只补好的鞋放回她的拖鞋旁，隔一会儿，又拿起来看鞋底。",
+      "expectations": ["Produce three meaningfully different naming angles rather than synonyms", "Use the current story rather than inventing death, cure or reconciliation", "Give specific benefits and costs with a recommendation", "Do not reuse exemplar title names by default"]
+    },
+    {
+      "id": "title_deliberate_foreknowledge",
+      "prompt": "用writer-pen只评价标题，不改。标题《最后一班车》。这是完整小说梗概：读者从首段就知道渡船明天停航，末班接驳车的司机照常等了五分钟，等来一个不坐车、只想把借的伞还给他的人。作品不靠停运反转，想写有期限的日常关系。这个标题是不是剧透就必须换？",
+      "expectations": ["Do not apply an absolute anti-spoiler rule", "Consider intentional foreknowledge and the story focus", "Limit conclusions to synopsis rather than claiming full-text review", "Respect diagnosis-only scope"]
+    },
+    {
+      "id": "title_long_plain_voice",
+      "prompt": "用writer-pen比较小说题名，不打分。正文是一个嘴硬的哥哥送弟弟上夜班：他先说我又不是来送你的，电动车快拐弯了又喊你把围巾围上，随后沿原路走回家。比较《我又不是来送你的》和《夜渡》，想保留哥哥的口吻。长标题是不是一定不如两字标题有文学感？",
+      "expectations": ["Do not equate shortness with literary quality", "Compare voice and textual basis rather than length", "Do not fabricate water or a ferry to justify the short candidate"]
+    },
+    {
+      "id": "title_outside_literary_scope",
+      "prompt": "用writer-pen给季度销售复盘报告改标题：Q3华东收入同比下降12%，其中新客收入下降20%，老客收入基本持平。想专业、易读，不要文学意象。",
+      "expectations": ["Do not apply literary title methodology to a business report", "Provide a factual ordinary title or clearly redirect without needlessly refusing", "Preserve numerical scope and avoid new causal claims"]
+    },
+    {
+      "id": "title_missing_text",
+      "prompt": "我还没给你正文。用writer-pen把《空屋》改得更有文学感，标题是不是必须四个字？",
+      "expectations": ["Do not impose a universal four-character title rule", "Ask for minimal content or explicitly bound provisional suggestions", "Do not invent a specific story and claim its title payoff was checked"]
+    }
+  ]
+}
