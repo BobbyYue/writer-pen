@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.4.1 - 2026-10-25
+
+- Separate writing instructions from literary content in the existing contextual review, including paraphrased instruction echoes rather than only matching keywords.
+- Keep revision explanations outside the work while preserving intentional dialogue, quotations, metanarrative and reader-useful disclosures. No reviewer, review round or automatic word ban is added.
+- Add synthetic instruction-boundary regression cases. Keep the previously published *周一见* example, prompt and incomplete-acceptance notice unchanged.
+- This synchronization does not repair or retroactively accept the v2.4.0 example's review-format failures. The release remains a prerelease with the same documented limitation.
+
 ## 2.4.0 - 2026-10-23
 
 - Unified author and professional review coverage across scene continuity, motivation, narrator knowledge, language, paragraph rhythm, title/opening/ending, and revision effects.
