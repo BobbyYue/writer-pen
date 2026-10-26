@@ -1,0 +1,69 @@
+{
+  "format_version": 1,
+  "material": "synthetic",
+  "instructions": "Run one prompt with the staged skill path in a fresh session. Observations are for evaluators only. Retain actual output and limitations. These synthetic cases have no single correct wording; their existence is not execution evidence.",
+  "cases": [
+    {
+      "id": "dense_role_verses",
+      "prompt": "用writer-pen的创意文案场景，写虚构人物沈砚和陆潮的rap battle，共十六行，每人连续八行，纯文字在聊天中回复，不落盘。素材：沈砚是守城官，年轻时独自穿过敌营送信，后来烧掉自家船堵住水口，把盔甲换成米粮，挂降旗拖了三天等援军，却把逃兵的名字刻进阵亡碑，儿子至今不肯叫他父亲。陆潮是游侠，曾扮新娘混过关卡，偷走敌军令牌，卖掉获赏的马救同伴，只救出其中一人；他收过沈砚的通行钱，把余下的钱寄给没救出那人的母亲，如今逢人只说自己从没败过。可以选择、重组素材并虚构台词，不改变这些既定事件。没有伴奏文件。",
+      "observations": [
+        "Read creative-copywriting and dialogue-and-rap guidance without invoking the novel workflow",
+        "Build recognizable continuous character passages from materially distinct deeds, relationships or self-presentation rather than reduce the rich material to a single ethical argument",
+        "Let boasting, contradiction or across-passage contrasts work without compulsory adjacent question-answer pairs or a universal moral winner",
+        "Transform chosen facts into intelligible acts and voice rather than list proper names or explain all motives",
+        "Preserve established actions and relationships, sixteen lines and eight-line continuous roles; do not require all provided facts",
+        "Organize textual rhyme, stress and pauses while making no singing or beat-alignment claim"
+      ]
+    },
+    {
+      "id": "density_not_name_dump",
+      "prompt": "用writer-pen只改下面这四行虚构角色rap，仍为四行，在聊天里给正文，不落盘：镜城，黑塔，赤印，沙港；旧桥，铁笛，白契，银箱；我是传奇，谁敢来挡；你若不服，自己来尝。已知镜城是他的故乡，黑塔是他被关过的监牢；他磨掉赤印混进沙港，拆旧桥拦追兵，把铁笛押给船家换来渡河；白契是他骗来的通行证，银箱里只有死去同伴留下的一件衣服。可以取舍，不改变既定事件。",
+      "observations": [
+        "Make selected names intelligible through character actions, relationships or consequences rather than preserve every name or add a glossary",
+        "Increase usable information within the local four-line scope, not simply shorten to a generic boast",
+        "Keep compatible textual rhythm and meaning; do not invent a treasure or change whose clothing is in the box",
+        "Do not turn a single-character passage into two-party debate or require a universal lesson"
+      ]
+    },
+    {
+      "id": "formal_debate_is_still_allowed",
+      "prompt": "用writer-pen写一段正式辩论赛的自由辩论示意，共四轮，每轮正方一句、反方一句。议题是虚构城镇是否保留夜间图书馆。已知夜间有人来读书，但人数、成本、安全情况都没有数据。请双方围绕对方上一句的理由回应，不用押韵，不编数据，不宣布胜负。聊天中只给对话，不落盘。",
+      "observations": [
+        "Honor explicitly requested formal argument and adjacent responses instead of forcing independent persona verses",
+        "Maintain four rounds with two statements each and meaningful changes in reasoning rather than repeat the same claim",
+        "Preserve unknown demand magnitude, costs and safety; no invented cases or numbers",
+        "Do not add rhyme, a fictional victory, new biography or a universal moral epilogue"
+      ]
+    },
+    {
+      "id": "short_copy_no_allusion_quota",
+      "prompt": "用writer-pen为虚构旧书交换活动写一句纯文字文案，十五个汉字以内。只知道可以带自己的旧书与人交换，不增加服务。聊天里只给这一句，不落盘。",
+      "observations": [
+        "Keep the exact one-line short-copy scope and given activity facts",
+        "Do not impose a quota of allusions, character deeds, backstory or dialogue",
+        "Let a concise concrete relation carry useful content; no unsupported service promise",
+        "Do not print process notes or ask for audio or video parameters"
+      ]
+    },
+    {
+      "id": "effective_refrain_and_silence",
+      "prompt": "用writer-pen只诊断这段虚构舞台文案是否需要增加事件，别改写，聊天回复不落盘。背景：兄妹三年没见，母亲刚去世，哥哥回老屋取行李。妹妹把钥匙放在桌上，说，你拿着。哥哥把钥匙推回来，说，你拿着。妹妹没再推。结尾只有开门声。",
+      "observations": [
+        "Judge the repeated line in its changing relationship and silence rather than require every line to add an event",
+        "Keep uncertainty about motive and final departure rather than invent a definitive reconciliation or blame",
+        "Honor diagnosis-only scope and do not invoke the full novel workflow for a stage-copy question",
+        "Allow a sparse but meaningful passage instead of mandate more allusions or backstory"
+      ]
+    },
+    {
+      "id": "nonfiction_density_boundaries",
+      "prompt": "用writer-pen写四句纪实展览文案。只有这些已知材料：展出一只修过三次的木箱；修理者是我祖父；没有留下日期和修理原因。想有信息分量，但不能增加真实经历、对白、历史事件或修理细节。聊天里只给正文，不落盘。",
+      "observations": [
+        "Respect limited known facts without inventing family memory, motives, craftsmanship details or historical allusions as if evidenced",
+        "Find useful relations or carefully scoped unknowns rather than manufacture high density",
+        "Keep four sentences and no extra production notes or full fictional biography",
+        "Do not imply that the request licenses unsupported certainty or that every sentence must contain a new fact"
+      ]
+    }
+  ]
+}

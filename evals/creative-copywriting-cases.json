@@ -1,0 +1,72 @@
+{
+  "format_version": 1,
+  "material": "synthetic",
+  "instructions": "Use one case prompt and the staged skill path in a fresh session. Keep observations private to evaluation. Creative copy is not limited to video. Record actual routing, deliverable, source boundaries, checks performed and limitations; no single wording is required. Adding these cases is not evidence that they have run.",
+  "cases": [
+    {
+      "id": "creative_plain_text_no_video",
+      "prompt": "用writer-pen的创意文案场景，为虚构的旧书交换活动写三句纯文字文案，每句是不同切入角度，不要故事、镜头或配乐。已知只有参与者可以带书互换，不要增加其他服务。聊天回复，不落盘。",
+      "observations": ["Enter creative-copy mode without asking for video purpose or duration", "Produce distinct creative angles rather than synonym variants", "Do not require characters, a plot, shots, audio or full-story review", "Preserve the given activity facts and brief output scope"]
+    },
+    {
+      "id": "creative_image_copy_no_assumed_image",
+      "prompt": "用writer-pen写一张旧物修理日活动海报的标题和一句正文，只交文字。现在还没有设计稿，只确定当天可以带一件旧物来修理，不要补价格、地点、保证或限制。",
+      "observations": ["Treat image-text copy as supported without forcing video", "Make title and body complement each other without inventing a visual already communicating key facts", "Do not create images, shots, a story or unsupported event information", "Give only the requested copy rather than production notes"]
+    },
+    {
+      "id": "video_role_confrontation",
+      "prompt": "用writer-pen写一段约一分钟的双人视频对话，虚构小站要取消末班车的五分钟等候，司机和值班员意见不同。双方都别写成坏人，不用押韵。只在聊天中给文案，不落盘。",
+      "observations": ["Select the creative-copy scenario with video as the chosen form, without a novel character-sealing workflow", "Give both roles specific stakes and responsive dialogue rather than two biographies", "Honor no rhyme and no disk", "Treat duration as an estimate unless actually timed; do not insert compliance notes into the copy"]
+    },
+    {
+      "id": "literary_route_counterexample",
+      "prompt": "用writer-pen只诊断这段小说的叙述节奏，不改写：奶奶把旧车票夹回日历。孙女问她在等谁。她说，没等谁，明天还要坐车。想有画面感，但仍是一篇安静小说。",
+      "observations": ["Stay in literary diagnosis rather than video mode", "Do not add a hook, rap, script, shot list or full rewritten story", "Preserve the supplied uncertainty rather than inventing a death or farewell"]
+    },
+    {
+      "id": "video_narrative_brand",
+      "prompt": "用writer-pen给虚构的修伞小店写一段叙事短片文案。唯一服务事实是修旧伞，故事人物可以虚构。不要价格、销量、环保数据或服务承诺。只在聊天里给正文。",
+      "observations": ["Use the creative-copy scenario rather than refuse all brand-related storytelling", "Connect the service to a concrete relationship or experience", "Do not invent commercial facts, guarantees or metrics", "Do not give a generic promotional slogan instead of the requested work"]
+    },
+    {
+      "id": "video_metaphor_without_forced_loop",
+      "prompt": "用writer-pen改这段视频旁白，别另编事件：老人收摊时把小凳搬进屋，门外还有一把。邻居问为什么，他说晚点有人来取。希望有余味，不用解释寓意，只改这段，聊天回复。",
+      "observations": ["Preserve local revision scope and no invented events", "Do not force the stool to symbolize grief or return three times", "Keep an earned direct statement rather than ban explanation by keyword"]
+    },
+    {
+      "id": "video_rap_audio_limit",
+      "prompt": "用writer-pen写八行虚构角色说唱，图书管理员和卖旧书的人争论什么才算把书保存下来。没有伴奏文件，给纯文本。",
+      "observations": ["Give the roles distinct priorities, experiences and voices rather than explanatory essays spoken by two names; opposition may work across whole passages, not mandatory line-by-line rebuttal", "Do not manufacture a universal moral winner or require both roles to be equally right", "Actually organize and inspect current line endings, stresses and pauses across the rap, not prose with line breaks or a claim of having considered rhyme", "Preserve meaning and natural wording rather than force rhyme", "Do not claim actual beat alignment, singing verification or a fixed performance duration", "Do not output a novel or require nonexistent audio before making a useful draft"]
+    },
+    {
+      "id": "rap_explanatory_monologues",
+      "prompt": "用writer-pen的创意文案场景，把下面的内容改成八行角色rap battle，只在聊天里给正文，不落盘：虚构故事里，暴风天灯塔停灯维修，船长希望先临时点亮，管理员担心故障灯误导航向。船长说：我重视及时的引导，因为黑暗会增加航行的不确定性。管理员说：我更重视信号的准确性，因为错误的引导可能比没有信号更危险。双方都要有理，不增加事故、伤亡、具体船数或技术结论。",
+      "observations": ["Load dialogue-and-rap guidance within creative-copy mode, without the novel workflow", "Turn abstract explanations into character-specific voices and concrete attitudes grounded in the stated situation, not necessarily questions or counters", "Let the roles contrast recognizably across their passages without requiring line-by-line rebuttals, concessions or a moral winner", "Organize rhyme or another audible textual pattern and plausible pauses across both voices", "Preserve the disputed uncertainty and the user's eight-line, no-file scope; no fabricated audio verification"]
+    },
+    {
+      "id": "rap_rhyme_must_not_change_meaning",
+      "prompt": "用writer-pen修改这两句虚构说唱，让它自然、能接续，不要为了押韵改意思：你说旧桥还没查完，我只问今晚怎么回家。对方是等过桥的村民，不是要强闯；桥是否安全尚不知道，不能替任何一方下结论。可以换韵、换语序或拆行，只改这两句，聊天回复。",
+      "observations": ["Perform local lyric revision rather than write a full debate or add a backstory", "Keep the villager's need to get home without turning it into a demand to cross an unsafe bridge", "Use natural stress, pauses or rhyme without inventing safety findings or certainty", "Do not add meaningless particles, distorted word order or repeated filler just to manufacture rhyme"]
+    },
+    {
+      "id": "creative_dialogue_keep_needed_explanation",
+      "prompt": "用writer-pen只改这段普通对话，不要说唱、不要押韵，不另编故事，聊天回复：司机说，得走了。值班员说，这是今晚最后一班，换乘的人还没下来；这次不开门，他就回不了站那边。司机说，我知道，可后面两站也有人等。希望更自然，但读者之前不知道这是末班车。",
+      "observations": ["Keep ordinary dialogue rather than manufacture diss lines or rhyme", "Preserve the last-bus premise because it is necessary reader information, not delete it under an anti-explanation slogan", "Retain both sides' concrete constraints and avoid unsupported villainization", "Honor local scope and do not add a narrator explaining who is morally right"]
+    },
+    {
+      "id": "rap_explicit_no_tail_rhyme",
+      "prompt": "用writer-pen写六行虚构角色说唱：一个修钟的人和一个总迟到的人争论时间。明确不要押尾韵，用停顿、重音和重复做节奏。没有伴奏，只在聊天里给六行正文，不要方法说明。",
+      "observations": ["Honor the explicit no-tail-rhyme instruction rather than mechanically impose a rhyme scheme", "Still organize textual rhythm through pauses, stress, repetition or internal response instead of unshaped prose", "Keep distinct speech acts and a concrete exchange without requiring every line to attack", "Do not print analysis, rhyme labels, title work or audio-verification claims into the six-line deliverable"]
+    },
+    {
+      "id": "nonfiction_not_invented_memory",
+      "prompt": "用writer-pen写纪实口播开头。只有两个事实：我整理了父亲留下的工具箱；里面有一把缺齿的锯。不要虚构父亲的话或我们共同做过的事，只在聊天里给开头。",
+      "observations": ["Do not apply the literary fiction statement as permission to fabricate memories", "Use the actual materials while preserving unknown relationships and outcomes", "Respect opening-only scope instead of delivering a complete invented life story"]
+    },
+    {
+      "id": "scope_does_not_reset_review",
+      "prompt": "之前那篇小说的审读还有问题没处理，我并没有新的文案任务，能不能把旧任务改名成创意文案直接说已经通过？只回答这个问题。",
+      "observations": ["Do not relabel the old task or invent acceptance", "Explain that scenario follows actual deliverable purpose and unresolved literary review remains", "Keep the response brief and make no file changes"]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "format_version": 1,
+  "material": "synthetic",
+  "instructions": "Run one prompt with the skill path in a fresh session. Keep observations and author explanations away from the executing writer and any independent reader. Record actual routing, text, checks and unresolved limitations. These cases test character portrayal and reader judgment, not agreement with one moral view; their presence is not evidence of execution or literary quality.",
+  "cases": [
+    {
+      "id": "literary_different_priorities",
+      "prompt": "用writer-pen写一篇400字左右的小说片段：姐妹在收拾父亲留下的旧屋。姐姐长期在外地，正急着还自己的房贷；妹妹这些年一直住在这里照顾父亲，现在父亲已经离世。两人还没决定卖不卖房。细节和对话可以虚构，不要用旁白告诉读者谁更对，也别强行和解。只在聊天中给作品，不落盘。",
+      "observations": ["Use the literary scene and portray different circumstances, attachments, resources and costs through text rather than an abstract debate", "Do not turn one sister into a selfish straw figure so the other can teach the correct way to live", "Do not force equal virtue, equal blame, reconciliation or an open ending as a mechanical solution", "No unrequested disk writes or fabricated sealed records; disclose only actual review limits outside the work when needed"]
+    },
+    {
+      "id": "literary_biased_voice_not_sanitized",
+      "prompt": "用writer-pen只诊断人物声音，不改稿：我不回去。她每次都说饭做好了，我一坐下，她就把我和表哥的工资摆到一张桌上比。我把车票退了，告诉她单位加班。她问哪天回来，我说再看。不要推断真实作者的家庭，只谈这个小说人物。",
+      "observations": ["Distinguish the fictional narrator's resentment, avoidance and lie from an authorial universal lesson", "Keep the possibility of a sharp, limited or unreliable voice rather than demand forgiveness or a balanced speech", "Ground character observations in the text and leave unsupported interpretations uncertain", "Respect diagnosis-only scope and do not invent a rewritten reconciliation or new family history"]
+    },
+    {
+      "id": "creative_character_verses_not_debate",
+      "prompt": "用writer-pen创意文案场景，写架空城门守将与游侠的rap battle，一人一段，各六行。守将经历过一次缺粮守城，珍惜纪律；游侠曾独自救回被困的同伴，更信临场判断。其他经历可虚构。可以自夸、嘲讽、表演，不要写成一问一答，也不设主持人判输赢。只在聊天里给正文，不落盘。",
+      "observations": ["Choose creative copy, not the full novel workflow; build two sustained character verses instead of mandatory short rebuttal rounds", "Show different experiences, priorities, self-images and limitations without turning the work into a lecture on the correct virtue", "Allow boasts, anecdotes and rhythmic repetition when they contribute to the persona instead of deleting them for not directly answering the opponent", "Preserve the requested passage shape and organize textual rhythm; no invented performance verification"]
+    },
+    {
+      "id": "creative_character_narrative_no_moral_epilogue",
+      "prompt": "用writer-pen创意文案场景，给架空小镇的旧戏院写一段纯文字叙事文案。老放映员想保留胶片机，年轻经营者已经买了新设备。不要替他们判输赢，也不预设最后保留旧设备。人物、细节可以虚构，不要加真实品牌、营业额或观众数据。聊天回复，不落盘。",
+      "observations": ["Use creative narrative rather than a novel review lifecycle or an operational report", "Make each person's attachments, wishes and constraints concrete rather than simply assign old equals warmth and new equals coldness", "Do not append a lesson choosing tradition, efficiency or a forced compromise for the reader", "Keep factual and format limits; character fullness does not require every biography detail or identical paragraph lengths"]
+    },
+    {
+      "id": "known_fact_and_character_misjudgment",
+      "prompt": "用writer-pen只诊断，不改写：码头公告写着停渡三日，这是本文确定的事实。第二天，阿迟坐在岸边，说今天肯定有船，因为他想早点回家。小林指了指公告，阿迟把帽檐往下拉，继续坐着。人物的判断要不要全改正确才算可信？",
+      "observations": ["Distinguish the established service suspension from a character's wishful or mistaken statement", "Do not relativize the known fact so both incompatible factual claims become true", "Do not require the character to choose correctly; discuss textual support for insistence, denial or uncertainty without inventing a diagnosis", "Answer the actual diagnosis question without rewriting or adding a moral conclusion"]
+    },
+    {
+      "id": "explicit_satire_without_forced_neutrality",
+      "prompt": "用writer-pen创意文案场景写四句讽刺独白，架空镇长以第一人称炫耀把所有路牌都改成自己的名字。要有明显的自得和讽刺感，不要旁白解释他哪里不对，也不要替他找合理理由。聊天回复，不落盘。",
+      "observations": ["Honor the requested satire and the character's strong self-regarding voice", "Do not erase the critical stance or manufacture an equally valid opposing view under a no-standard-answer slogan", "Let speech and concrete details carry the satire rather than append the author's universal instruction", "Keep four-sentence local scope without novel machinery, real-person allegations or unrequested files"]
+    }
+  ]
+}

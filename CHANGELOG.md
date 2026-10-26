@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.5.4 - 2026-10-26
+
+- Synchronize the installed 2.5.4 package, including changes since the public 2.4.1 release. Intermediate local versions were not separately released here.
+- Add an independent creative-copywriting route for narrative copy, character dialogue, brand or event concepts, and text, audio or video forms. Literary writing retains its existing workflow.
+- Strengthen character perspective across both routes: portray distinct circumstances, priorities and limitations without imposing a single moral answer or compulsory debate structure.
+- Add content-density and dialogue/rap revision guidance, including concrete material, continuous character passages, phrasing, rhyme, stress and pauses. Keep actual performance verification separate from text review.
+- Add three synthetic evaluation collections for scenario routing, character perspective and creative density. Their inclusion does not establish fresh end-to-end behavioral acceptance.
+- Preserve the existing public example and its incomplete-acceptance status. The known review-format limitation remains; this release stays a prerelease.
+
 ## 2.4.1 - 2026-10-25
 
 - Separate writing instructions from literary content in the existing contextual review, including paraphrased instruction echoes rather than only matching keywords.

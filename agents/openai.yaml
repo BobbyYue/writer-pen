@@ -1,4 +1,4 @@
 interface:
   display_name: "作家那支笔"
-  short_description: "中文文学创作与改稿：以人物和故事为先，写前拟题、写后复核，完整作品默认交付HTML。"
-  default_prompt: "请用 $writer-pen 根据我的素材创作或修改文学作品，先拟工作标题、成稿后复核，让情节与细节符合人物、具有真实感，并按我指定的范围完成。"
+  short_description: "中文文学创作与改稿；另设不限载体的创意文案场景，分别构思和检查，完整作品默认交付HTML。"
+  default_prompt: "请用 $writer-pen 根据我的素材与实际用途选择文学写作或创意文案场景，完成构思、写作与检查，并遵守我指定的格式和修改范围。"

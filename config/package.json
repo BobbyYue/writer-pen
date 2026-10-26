@@ -1,6 +1,6 @@
 {
   "name": "writer-pen",
-  "version": "2.4.1",
+  "version": "2.5.4",
   "runtime_format": 1,
   "distribution": "self-contained, per-task pinned runtime",
   "shared_runtime_policy": "Do not mutate sibling skills or rely on their installed files. Package exact local sources and verify the file manifest."
