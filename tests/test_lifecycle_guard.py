@@ -99,6 +99,32 @@ class LifecycleGuardTests(WritingFixtures, unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'context_value missing'):
             wr.add_reviewer_record(self.state, body, self.put_json('missing-context.json', body))
 
+    def test_professional_requires_defensive_metric_in_native_review(self):
+        self.linked(complete=False)
+        self.begin_round()
+        body = self.reviewer_body('professional')
+        del body['context_review']['defensive_expression']
+        with self.assertRaisesRegex(ValueError, 'defensive_expression missing'):
+            wr.add_reviewer_record(self.state, body, self.put_json('missing-defensive.json', body))
+
+    def test_confirmed_defensive_problem_enters_revision_not_transport_retry(self):
+        import defensive_expression as defensive
+        self.linked(complete=False)
+        self.begin_round()
+        body = self.reviewer_body('professional')
+        text = wr.current(self.state)['text']
+        entry = defensive.item(text, 0, len(text))
+        entry.update(classification='excess', reason='Synthetic unresolved-expression fixture.',
+                     reader_effect='Synthetic reading impact.', protected_meaning='Synthetic protected meaning.',
+                     prior_context='Synthetic preceding context.', direct_alternative=text,
+                     excess_spans=[{'start': 0, 'end': len(text), 'quote': text}])
+        body['context_review']['defensive_expression']['items'] = [entry]
+        with self.assertRaisesRegex(ValueError, 'defensive_expression unresolved'):
+            wr.add_reviewer_record(self.state, body, self.put_json('false-defensive-pass.json', body))
+        body.update(verdict='fail', issues=[{'impact': 'Synthetic confirmed expression remains for revision.'}])
+        result = wr.add_reviewer_record(self.state, body, self.put_json('honest-defensive-fail.json', body))
+        self.assertEqual(result['verdict'], 'fail')
+
     def test_professional_cannot_omit_source_attribution(self):
         self.linked(complete=False)
         self.begin_round()

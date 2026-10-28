@@ -21,6 +21,7 @@ import re
 import statistics
 import sys
 import context_value
+import defensive_expression
 import source_attribution
 import tempfile
 import unicodedata
@@ -170,7 +171,7 @@ def session(run, mutate=False):
         fcntl.flock(lock, fcntl.LOCK_EX)
         state = load_json(statefile)
         need(state.get("version") == 1 and state.get("state_digest") == seal(state), "Lifecycle state integrity failed")
-        need(state["implementation"] == {"engine": sha(Path(__file__).read_bytes()), "config": ref(CONFIG)}, "Lifecycle implementation changed; migrate explicitly")
+        need(state["implementation"] == {"engine": sha(Path(__file__).read_bytes()), "config": ref(CONFIG), "defensive_expression": sha(Path(defensive_expression.__file__).read_bytes())}, "Lifecycle implementation changed; migrate explicitly")
         if state.get("method_sha256"):
             import literary_methods
             need(state["method_sha256"] == literary_methods.method_packet("author")["sha256"],
@@ -253,7 +254,7 @@ def init_run(run, plan_path, profile, source_paths=()):
     p = Path(run)
     p.mkdir(parents=True, mode=0o700, exist_ok=False)
     state = {"version": 1, "profile": profile, "plan": plan, "plan_ref": ref(plan_path), "sources": sources,
-             "implementation": {"engine": sha(Path(__file__).read_bytes()), "config": ref(CONFIG)},
+             "implementation": {"engine": sha(Path(__file__).read_bytes()), "config": ref(CONFIG), "defensive_expression": sha(Path(defensive_expression.__file__).read_bytes())},
              "units": [], "candidates": [], "rounds": [], "presentations": [],
              "evidence": [ref(p) for p in plan.get("wordlists", {}).values()] +
                          [ref(i["source_path"]) for i in plan.get("evidence_items", []) if i.get("source_path")], "events": []}
@@ -264,6 +265,9 @@ def init_run(run, plan_path, profile, source_paths=()):
         state["method_sha256"] = methods["sha256"]
     packet = p / "task-packet.json"
     write_json(packet, {"profile": config["profiles"][profile], "task": plan, "literary_methods": methods,
+        "defensive_expression": {"before": "Identify real reader questions and necessary limits in the existing plan.",
+            "during": "Unit checkpoints compute candidates; use existing observations for contextual choices.",
+            "after": "Existing context review must resolve excess/pending items and compute C/D/R on the current surface."},
         "stage_order": ["init before drafting", "unit after a complete unit", "measure and candidate before review", "review-start before independent calls", "review-finish after all returns", "checked skill delivery"],
         "stop": "Count early and final independent batches together, at most three. Present the current draft with unresolved impact after exhaustion."}, exclusive=True)
     state["evidence"].append(ref(packet))
@@ -286,10 +290,12 @@ def record_unit(run, text_path, record_path):
             need(quote in value, "Unit quote not in registered text")
             nonempty(observation.get("reason"), "unit observation reason")
         item = {"unit_id": record["unit_id"], "text": value, "text_sha256": sha(value.encode()), "record": record}
+        item["defensive_expression"] = defensive_expression.measurement(value)
         state["units"].append(item)
         state["evidence"].append(ref(record_path))
         event(state, "during", {"unit_id": item["unit_id"], "text_sha256": item["text_sha256"]})
-    return {"status": "unit-recorded", "unit_id": record["unit_id"]}
+    return {"status": "unit-recorded", "unit_id": record["unit_id"],
+            "defensive_expression": item["defensive_expression"]}
 
 
 def p90(values):
@@ -457,6 +463,7 @@ def measure_data(state, value, geometry_path=None):
                        "opening_boundary": "Literal placement in a declared opening, not semantic correctness or 30-second comprehension", "sentences": len(sentences), "exact_duplicate_sentences": duplicate_count,
                        "exact_duplicate_ratio": duplicate_count / len(sentences) if sentences else None, "human_30_second_comprehension": "not-tested"},
                        "signals": [{"quote": s, "kind": "exact-repetition"} for s, n in counts.items() if n > 1]}
+    result["defensive_expression"] = defensive_expression.measurement(value)
     for metric, entry in result.items():
         for i, signal in enumerate(entry["signals"], 1):
             signal["id"] = metric + ":" + str(i)

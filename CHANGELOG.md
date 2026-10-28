@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.6.1 - 2026-10-28
+
+- Add defensive-expression metrics in the existing professional/context review: candidates C, confirmed excess D, excess-character ratio R and unresolved judgments. Preserve supported character and narrator voices, necessary disclosures and source quotations.
+- Require current context-review version 4 before checked completion. Retain genuine negative review results for revision rather than classifying them as malformed returns; keep the existing three-round draft path.
+- Add candidate signals to unit checkpoints and whole-work measurement, with paired synthetic cases and exact-span/counting/guard regressions.
+- Synchronize the latest character-address and material-selection guidance from local 2.5.5/2.5.6: distinguish what each speaker wants from this listener, preserve useful voice, and compare added material against attention cost.
+- Include local 2.6.1 guidance distinguishing an audience from a decision-maker, preserving the requested contribution-focused theme and tailoring allusion detail to the audience's familiarity.
+- Preserve the public example, its provenance and its incomplete-acceptance notice. This release remains a prerelease; bounded synthetic metric trials do not constitute new full-work or human-reader acceptance.
+
 ## 2.5.4 - 2026-10-26
 
 - Synchronize the installed 2.5.4 package, including changes since the public 2.4.1 release. Intermediate local versions were not separately released here.

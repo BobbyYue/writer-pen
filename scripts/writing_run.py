@@ -567,7 +567,8 @@ def add_reviewer_record(state, body, result_path):
     if role == 'professional':
         value_errors = context_value.validate(body.get('context_review'), draft['text'], 'literary')
         value_errors.extend(source_attribution.validate(body.get('source_attribution'), draft['text'], attribution_source, 'source', 'literary'))
-        malformed = [e for e in value_errors if e != 'context_value unresolved content selection' and not e.startswith('source_attribution unresolved')]
+        malformed = [e for e in value_errors if e != 'context_value unresolved content selection'
+                     and not e.startswith(('source_attribution unresolved', 'defensive_expression unresolved'))]
         need(not malformed and (body['verdict'] == 'fail' or not value_errors), '; '.join(value_errors))
     else:
         value_errors = source_attribution.validate(body.get('attribution_replay'), draft['text'], profile='literary')

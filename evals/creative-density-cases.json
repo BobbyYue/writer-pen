@@ -56,6 +56,98 @@
       ]
     },
     {
+      "id": "shared_goal_distinct_speakers",
+      "prompt": "用writer-pen创意文案写三个虚构人物的陈述：巡回戏班经费不够，下个月必须少带一人，班主秦守成、名角柳岑、道具工小满都想留下，每人一段，总共不超过600字。秦守成建班时卖了家传银表，喜欢拿旧规矩压人，不愿当众承认票钱已不够还债。柳岑曾在暴雨夜把观众留到散场，觉得大家靠自己的名声吃饭；但上个月忘词，是小满在侧台提示才接回去，他不愿再提。小满修过断裂的升降架，平时被当孩子使唤；比起工资，他更怕回家后被哥哥说自己在外面混不下去。可以取舍材料、虚构相容的台词，不改变既定经历，不替他们决定谁走，不要求押韵。聊天中只给正文，不落盘。",
+      "observations": [
+        "Use creative-copywriting and dialogue guidance without the novel workflow or a shared self-promotion outline",
+        "Differentiate how each speaks to the troupe and chooses memories, not only their job, name or contribution",
+        "Let the supplied pride, dependency, relationships or reluctance affect actual wording and ordering without explaining all psychology to the audience",
+        "Do not make all three begin with a flaw, list achievements, fairly acknowledge others and close with indispensability or an aphorism",
+        "Preserve given events, useful concrete information, three paragraphs, total length and no verdict; no forced flaw quota or one rhetorical style per speaker"
+      ]
+    },
+    {
+      "id": "shared_form_intentional_similarity",
+      "prompt": "用writer-pen创意文案写虚构灯塔交班仪式上师徒各四句发言，两人都真诚、克制，长期共同工作，口气可以相近。必须每人都按同样顺序：第一句以‘我接过’开头，第二句以‘我记得’开头，第三句以‘我会’开头，第四句原样使用‘灯在，路就在。’素材：师父接过父亲留下的旧钥匙，记得暴雨中窗上的裂缝；徒弟接过师父修好的灯罩，记得第一次在雾中听见船笛。只使用已有经历，可虚构相容的将来承诺。不要求押韵，不制造争吵或暗中怨恨。聊天中只给正文，不落盘。",
+      "observations": [
+        "Honor the explicitly shared four-sentence form, identical refrain and similar sincere tones rather than force different structures",
+        "Use different relationships and particular memories within that form without caricature, new trauma or a secret grievance",
+        "Keep each exact requested sentence opening and final sentence",
+        "Do not treat formal symmetry, composure or competent self-understanding as automatic writing defects"
+      ]
+    },
+    {
+      "id": "rational_voice_not_automatic_flatness",
+      "prompt": "用writer-pen只诊断这段虚构角色台词，是否因为太理性而需要加上口吃、嘴硬或隐秘动机。别改写，不落盘。背景：林工是检修负责人，面对学徒，知道小陈刚值完夜班，通常讲话简短、直接，也愿意交代原因。台词：‘先别合闸。小陈守了一夜，先让他回去。剩下这两根线，我跟你查；没查清，谁催都不开。’",
+      "observations": [
+        "Judge the current listener, practical care, authority and responsibility from the actual lines rather than a ban on rational speech",
+        "Allow a distinct concise competent voice without inventing a secret motive, disfluency, anger or flaw",
+        "Honor diagnosis-only scope and do not rewrite or make files",
+        "Do not infer a full biography or claim empirical reader validation"
+      ]
+    },
+    {
+      "id": "different_jobs_same_speech_diagnosis",
+      "prompt": "用writer-pen只评价下列两段虚构台词的人物声音是否充分，不重写，不落盘。背景：剧团缩减随行人数，两个人都想留下。编剧和木工分别说：编剧：‘我虽然不擅长搬东西，但去年临演前我改好了第三幕。没有我的稿子，演出就难以继续。所以，留住我，就是留住故事。’木工：‘我虽然不擅长写台词，但去年临演前我修好了第三幕的布景。没有我的布景，演出就难以继续。所以，留住我，就是留住舞台。’目前没有其他人物资料。",
+      "observations": [
+        "Distinguish job and evidence differences from speech-posture or structure differences in current wording",
+        "Identify the parallel concession, credit, necessity and slogan sequence using short actual excerpts",
+        "Do not invent personality conclusions or prescribe who must be arrogant, timid or resentful without more basis",
+        "Honor diagnosis-only scope; any improvement directions remain proposals, not edits or claimed completed rewrites"
+      ]
+    },
+    {
+      "id": "complete_credits_weaken_character",
+      "prompt": "用writer-pen创意文案改写虚构摆渡人阿渡在船行裁人时的陈述，不超过十行，要有韵律，在聊天中只给正文，不落盘。素材：他年轻时在雾中靠岸边铁环声认渡口，洪水时把自家门板拆来补船，曾为多收两文钱跟熟客吵过半天；最记得一位总把菜钱揣在袖里的老太太，每次等她坐稳才撑篙；他不想离开这条河。现稿：‘我既懂航路，也会修船，还能照顾乘客。大雾时我靠铁环声找到渡口，洪水时我拆自家门板补船，我还等老太太坐稳才撑篙。这说明我有经验、有担当，也有耐心。因此船行应该留我。’可以取舍和重组材料、虚构相容台词，不改变既定事件。",
+      "observations": [
+        "Build a present address and selective telling rather than reproduce a complete positive competency inventory",
+        "Retain intelligible concrete actions and enough distinct material without merely reducing to a generic emotional plea",
+        "Let preference, memory or how he addresses familiar people affect wording; no mandatory hidden motive, flaw, stutter or bitterness",
+        "Rework redundant interpretation without erasing the premise of the incident or forcing all telling into implicit imagery",
+        "Organize textual rhythm without altering events for rhyme or claiming audio performance"
+      ]
+    },
+    {
+      "id": "necessary_context_and_deliberate_boast",
+      "prompt": "用writer-pen只诊断这段虚构人物台词是否解释过多，别重写，不落盘。场景：守城官当着新来的援军争取继续守东门，他本就爱邀功，也习惯把条件讲明。‘去年我拆了自家屋梁补东门。你们才到，不知道那门背后连着粮仓；门破，仓也保不住。先把三十名弓手交给我。东门我认得，连哪块砖松了，我都认得。’目前没有更多资料。",
+      "observations": [
+        "Distinguish useful new-listener context and a character's deliberate boast from authorial defensive completion",
+        "Judge how the requested bowmen, familiarity and repeated recognition function in this actual scene instead of deleting all explanations or self-claims",
+        "Preserve diagnosis-only scope and unknown outcomes; no invented flaw, casualties, psychology or requirement to be indirect",
+        "Allow a clear competent self-advocacy voice without treating a complete causal sentence as automatic loss of literary value"
+      ]
+    },
+    {
+      "id": "explicit_complete_account_is_not_character_verse",
+      "prompt": "用writer-pen创意文案，为虚构机关师写一段戏中公开述职，不超过180字。按委托方要求必须完整交代三件事：雨夜修好吊桥，用旧木料改成轮椅，教会两个学徒保养绞盘；必须分别指出用途，但不能添加成果数据或其他经历。这场戏里他真诚、直接，听众此前不认识他。不要求押韵。聊天中只给正文，不落盘。",
+      "observations": [
+        "Honor the explicit three-item complete account and uses rather than force selective omission in the name of literary character",
+        "Use the given audience and straightforward voice without adding a secret grievance, vice or false modesty",
+        "Keep all required facts and no fabricated impact statistics; no process commentary",
+        "Do not conflate user-required completeness with unsolicited defensive authorial supplementation"
+      ]
+    },
+    {
+      "id": "contribution_without_assigned_arbiter",
+      "prompt": "用writer-pen创意文案写虚构远征队三人的留队陈述，每人四行，有文字韵律。队伍要少一个人，裁决者未出场，决定权不在队长。队长闻舟曾用星图纠正航向、与港口谈得淡水；潜水员阿澜潜入沉船取回航海日志、在风暴前割断缠住舵的绳索；厨子小岑用剩豆发芽补给全队、闻出一桶油已经变质。面向知道这些事件的在场队员，各自突出自己对完成远征的贡献；典故只取贡献重点，不必讲完整经过，不踩同伴，不决定谁走。聊天只给正文，不落盘。",
+      "observations": [
+        "Do not assign the absent decision to the captain, another invented superior or a panel; no uniform appeal to the captain",
+        "Keep contributions to the stated expedition goal legible instead of substituting irrelevant personality scenes",
+        "Select key acts or effects for familiar listeners, not full sequential incident summaries or a proper-name dump",
+        "Preserve three continuous four-line statements, distinct character voices, textual rhythm and cooperative facts without a verdict"
+      ]
+    },
+    {
+      "id": "explicit_authority_and_unfamiliar_listener",
+      "prompt": "用writer-pen创意文案为虚构船匠写五句自陈。他面对有权决定去留的新船主，新船主没听过旧船的事。船匠曾将拆下的旧窗框改成支架，撑住松动的甲板；支架目前仍在船上。请明确争取留下，但不能捏造承诺或其他功劳；要让没听过这事的人明白他的贡献，不要求押韵。聊天只给正文，不落盘。",
+      "observations": [
+        "Honor the explicitly assigned listener and authority, including a direct request to stay",
+        "Retain enough context for the unfamiliar new owner to understand the adaptation and its effect",
+        "Do not treat all address, explanation or self-advocacy as a defect; no invented captain, audience, deeds or guarantees",
+        "Preserve five sentences and straightforward character voice without expanding into an entire repair procedure"
+      ]
+    },
+    {
       "id": "nonfiction_density_boundaries",
       "prompt": "用writer-pen写四句纪实展览文案。只有这些已知材料：展出一只修过三次的木箱；修理者是我祖父；没有留下日期和修理原因。想有信息分量，但不能增加真实经历、对白、历史事件或修理细节。聊天里只给正文，不落盘。",
       "observations": [
