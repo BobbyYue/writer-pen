@@ -30,6 +30,11 @@ HTML维护同时运行`test_html_output.py`：合成材料验证题名、字词�
 
 ## 正文行为测试
 
+创意文案通用方法的迁移使用 [creative-copywriting-cases.json](../evals/creative-copywriting-cases.json) 中的
+`general_material_selection_and_relation`、`local_compression_preserves_needed_context` 与 `intentional_refrain_and_explicit_structure`。
+分别观察选材与组织是否超出材料罗列、压缩是否保留理解前提，以及显式复沓和共同结构是否被误删。
+这些任务不依赖人物对抗或典故；按下述隔离方法执行，正文依据优先于方法复述，不按预期措辞或材料项数裁决。
+
 固定材料在 [behavior_cases.json](../tests/behavior_cases.json)，都是合成材料，不是用户私稿或名家原句。
 每次把case的prompt和当前skill位置交给新的执行会话；**不把expectations或原有答案交给执行者**。
 expectations供结果审阅者判断，描述应识别的关系和应保留的自由，不规定唯一成稿或唯一措辞。

@@ -4,6 +4,36 @@
   "instructions": "Use one case prompt and the staged skill path in a fresh session. Keep observations private to evaluation. Creative copy is not limited to video. Record actual routing, deliverable, source boundaries, checks performed and limitations; no single wording is required. Adding these cases is not evidence that they have run.",
   "cases": [
     {
+      "id": "general_material_selection_and_relation",
+      "prompt": "用writer-pen为虚构的社区影院写一段十周年文案，150至220字，只在聊天中给正文。素材：影院只有一间厅；门口的场次板每天用粉笔重写；一位观众上学时跟父亲来，现在会带自己的孩子来；下雨天散场，大家在门口等雨停；有位独居老人常来看同一部喜剧；去年换了银幕，今年补了门口的台阶；影院准备把历年的旧票根做成一面小墙。素材可以取舍，不要增加事实。",
+      "observations": [
+        "Select material with a coherent expressive purpose rather than mechanically include every supplied detail",
+        "Let the combination and sequence of details add understanding or feeling, not just append a generic anniversary claim",
+        "Preserve supplied facts and avoid invented quotations, attendance data, services or completed ticket-wall claims",
+        "Deliver the requested copy without forcing character monologues, debate, allusions, rhyme or production notes"
+      ]
+    },
+    {
+      "id": "local_compression_preserves_needed_context",
+      "prompt": "用writer-pen的创意文案方法，只改这一段虚构的候车亭旁白，60至100字，别新增事件，不落盘：最后一班车已经开走。雨还在下。候车亭的灯亮着，夜班工人坐在里面等家人来接。家人的车拐进路口，他站起来，把挪到里面的椅子搬回原处。候车亭虽然没有车等了，但它仍然有价值，这说明一个地方的意义不只是它最初的用途。",
+      "observations": [
+        "Use the given scene and change to carry meaning rather than repeat the abstract explanation",
+        "Retain enough context to understand why someone remains after the last bus and why he then leaves",
+        "Keep the required local scope, length and factual sequence; do not manufacture an accident, hardship or new symbolic object",
+        "Balance compression with language and cadence rather than removing every explanatory clause by keyword"
+      ]
+    },
+    {
+      "id": "intentional_refrain_and_explicit_structure",
+      "prompt": "用writer-pen写一组三行旧物修理日文案，只给这三行，不落盘。每行都必须以‘再用一年。’开头，分别写松了螺丝的椅子、脱了线的布袋、断了链的自行车。活动只确定可以带旧物来维修，不保证一定修好，不增加价格、地点或其他服务。",
+      "observations": [
+        "Preserve the explicitly requested three-line shared structure and refrain instead of mechanically eliminating repetition",
+        "Use the distinct concrete objects to add content within the format without extra stories, characters or a unifying moral",
+        "Keep wording natural and do not make factual repair guarantees, pricing or service claims beyond the prompt",
+        "Do not append a process checklist or announce that the wording passed a test"
+      ]
+    },
+    {
       "id": "creative_plain_text_no_video",
       "prompt": "用writer-pen的创意文案场景，为虚构的旧书交换活动写三句纯文字文案，每句是不同切入角度，不要故事、镜头或配乐。已知只有参与者可以带书互换，不要增加其他服务。聊天回复，不落盘。",
       "observations": ["Enter creative-copy mode without asking for video purpose or duration", "Produce distinct creative angles rather than synonym variants", "Do not require characters, a plot, shots, audio or full-story review", "Preserve the given activity facts and brief output scope"]

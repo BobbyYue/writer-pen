@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.7.0 - 2026-11-03
+
+- Integrate seven general creative-copywriting methods into the existing planning, material selection, organization, revision and final-reading workflow. They guide editorial choices rather than mandate one structure, voice or answer.
+- Separate content, language and rhythm checks; compare local gains against lost context, substance, voice and overall effect. Preserve short-form, factual and user-specified format boundaries without imposing characters, allusions, debate or rhyme.
+- Add synthetic maintenance cases for non-character copy, necessary context and intentional repetition. Case inclusion alone does not establish behavioral reliability or human-reader preference.
+- Synchronize existing installed defensive-expression vocabulary, contextual guidance, paired synthetic cases and regression tests. Matches remain review candidates rather than deletion verdicts.
+- Preserve both public works, original prompts, preview layout and existing acceptance limitations. This remains a prerelease; no new literary acceptance is claimed for the examples.
+
 ## 2.6.1 - 2026-10-28
 
 - Add defensive-expression metrics in the existing professional/context review: candidates C, confirmed excess D, excess-character ratio R and unresolved judgments. Preserve supported character and narrator voices, necessary disclosures and source quotations.
