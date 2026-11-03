@@ -57,7 +57,9 @@ git clone https://github.com/BobbyYue/writer-pen.git ~/.codex/skills/writer-pen
 <!-- example:journey-team:prompt:start -->
 ```text
 假如现在西游记的取经团队需要裁掉一个人
-用writer-pen 创意文案方法给每个人写一段陈述，表明为什么“我很重要，取经不能没有我”
+用writer-pen 创意文案方法
+给每个人写一段陈述，表明为什么
+“我很重要，取经不能没有我”
 ```
 <!-- example:journey-team:prompt:end -->
 
