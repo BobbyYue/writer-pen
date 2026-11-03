@@ -9,8 +9,8 @@
 ## 作品示例
 
 <p>
-<a href="#创意文案案例取经团队裁员"><img src="docs/images/example-creative.svg" alt="创意文案：《经还在西边》，取经团队裁员中的五个人物陈述" width="420"></a>
-<a href="#文学写作案例周一见"><img src="docs/images/example-literary.svg" alt="文学写作：《周一见》，一段实习期间的含混关系" width="420"></a>
+<a href="#创意文案案例取经团队裁员"><img src="docs/images/example-creative.svg" alt="创意文案：《经还在西边》，取经团队裁员中的五个人物陈述" width="400"></a>
+<a href="#文学写作案例周一见"><img src="docs/images/example-literary.svg" alt="文学写作：《周一见》，一段实习期间的含混关系" width="400"></a>
 </p>
 
 两篇均为经过多轮修改的虚构作品，不代表单条提示词的一次生成。
