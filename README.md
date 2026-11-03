@@ -8,20 +8,10 @@
 
 ## 作品示例
 
-<table>
-<tr>
-<td width="50%" valign="top">
-<a href="#创意文案案例取经团队裁员"><img src="docs/images/example-creative.svg" alt="创意文案：《经还在西边》，取经团队裁员中的五个人物陈述" width="480"></a>
-<p>取经团队要裁一人，五个角色分别开口，陈述自己的价值。</p>
-<p><a href="#创意文案案例取经团队裁员"><strong>创意文案 · 提示词与全文</strong></a></p>
-</td>
-<td width="50%" valign="top">
-<a href="#文学写作案例周一见"><img src="docs/images/example-literary.svg" alt="文学写作：《周一见》，一段实习期间的含混关系" width="480"></a>
-<p>一次实习，一段含混的关系，和一个开始为留下来做打算的人。</p>
-<p><a href="#文学写作案例周一见"><strong>文学写作 · 提示词与全文</strong></a></p>
-</td>
-</tr>
-</table>
+<p>
+<a href="#创意文案案例取经团队裁员"><img src="docs/images/example-creative.svg" alt="创意文案：《经还在西边》，取经团队裁员中的五个人物陈述" width="420"></a>
+<a href="#文学写作案例周一见"><img src="docs/images/example-literary.svg" alt="文学写作：《周一见》，一段实习期间的含混关系" width="420"></a>
+</p>
 
 两篇均为经过多轮修改的虚构作品，不代表单条提示词的一次生成。
 
