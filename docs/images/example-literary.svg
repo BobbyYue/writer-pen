@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">文学写作：周一见</title>
+  <desc id="desc">一段实习期间的含混关系。她说：“那我们先走了，周一见。”“周一见。”我说。</desc>
+  <rect width="640" height="400" fill="#fbf4f5"/>
+  <rect width="8" height="400" fill="#973d50"/>
+  <g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+    <text x="36" y="54" font-size="28" font-weight="600" fill="#973d50">文学写作 / 短篇小说</text>
+    <text x="36" y="140" font-size="58" font-weight="700" fill="#202527">周一见</text>
+    <text x="36" y="193" font-size="28" fill="#69525a">一段实习期间的含混关系。</text>
+    <path d="M36 228H604" stroke="#ddc6cc"/>
+    <g font-size="30" fill="#202527">
+      <text x="36" y="283">她说：“那我们先走了，周一见。”</text>
+      <text x="36" y="332">“周一见。”我说。</text>
+    </g>
+    <text x="36" y="377" font-size="24" fill="#69525a">正文 · 片段</text>
+  </g>
+</svg>
