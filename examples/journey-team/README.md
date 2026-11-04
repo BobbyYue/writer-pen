@@ -14,6 +14,8 @@
 
 根目录 README 展示作品预览，展开案例即可阅读提示词与全文；HTML 保留不同停顿的间距，原著情节出处见其页末附注。
 
+需要对照时，可查看[上一版全文](https://github.com/BobbyYue/writer-pen/blob/523adb835b7e541f81b0f84331903ad6b85b1f3d/examples/journey-team/story.txt)。
+
 ## 核对范围
 
 已核对 README、纯文本和 HTML 的题名、五个人物、字词、标点及顺序一致。本版 HTML 的桌面、手机和打印实际显示尚未核对；本例用于作品展示，不作为单次生成效果或完整验收通过的证明。
