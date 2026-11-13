@@ -69,16 +69,16 @@
 <details>
 <summary>展开资料与诗作旁记</summary>
 
-**陈雅华的回忆、围棋定段赛与福州冬令营：**[《N面邓煜》· 采访亲友、老师与同学（宝安湾刊本）](https://www.baoanone.com/content220487.html)；[羊城晚报 · 冯跃峰保存的解题手稿](https://m.thepaper.cn/newsDetail_forward_33650857)；[央视《面对面》· 邓煜获奖后长访谈](https://m.thepaper.cn/newsDetail_forward_33796468)；[每日经济新闻 · 对话邓煜](https://www.nbd.com.cn/rss/zaker/articles/4552917.html)。
+**陈雅华的回忆、围棋定段赛与福州冬令营**：[《N面邓煜》· 采访亲友、老师与同学（宝安湾刊本）](https://www.baoanone.com/content220487.html)；[羊城晚报 · 冯跃峰保存的解题手稿](https://m.thepaper.cn/newsDetail_forward_33650857)；[央视《面对面》· 邓煜获奖后长访谈](https://m.thepaper.cn/newsDetail_forward_33796468)；[每日经济新闻 · 对话邓煜](https://www.nbd.com.cn/rss/zaker/articles/4552917.html)。
 
-**北大求学、暑期课题与博士论文：**[汤涛 ·《诗心藏浩海，妙算透穹苍》全文](https://www.aisixiang.com/data/182670.html)；[Quanta · Jordana Cepelewicz 访邓煜、亲友与同行](https://www.quantamagazine.org/yu-deng-wins-the-fields-medal-2026-for-his-work-on-the-random-data-problem-20260723/)；[北京大学校友网 · 专访北大校友邓煜](https://pku.org.cn/info/1013/48982.htm)；[邓煜 · 2015年博士论文摘要（书目摘录，第3条）](https://www.grafiati.com/en/literature-selections/dispersive-equations/dissertation/)；[普林斯顿大学 · 读博期间的研究与邓煜自述（2015年）](https://gradschool.princeton.edu/news/four-win-jacobus-fellowship-top-graduate-student-honor-1)。
+**北大求学、暑期课题与博士论文**：[汤涛 ·《诗心藏浩海，妙算透穹苍》全文](https://www.aisixiang.com/data/182670.html)；[Quanta · Jordana Cepelewicz 访邓煜、亲友与同行](https://www.quantamagazine.org/yu-deng-wins-the-fields-medal-2026-for-his-work-on-the-random-data-problem-20260723/)；[北京大学校友网 · 专访北大校友邓煜](https://pku.org.cn/info/1013/48982.htm)；[邓煜 · 2015年博士论文摘要（书目摘录，第3条）](https://www.grafiati.com/en/literature-selections/dispersive-equations/dissertation/)；[普林斯顿大学 · 读博期间的研究与邓煜自述（2015年）](https://gradschool.princeton.edu/news/four-win-jacobus-fellowship-top-graduate-student-honor-1)。
 
-**暑期论文、纽约的去留和洛杉矶的合作：**[Quanta · Jordana Cepelewicz 访邓煜、亲友与同行](https://www.quantamagazine.org/yu-deng-wins-the-fields-medal-2026-for-his-work-on-the-random-data-problem-20260723/)；[北京大学校友网 · 专访北大校友邓煜](https://pku.org.cn/info/1013/48982.htm)；[每日经济新闻 · 对话邓煜](https://www.nbd.com.cn/rss/zaker/articles/4552917.html)；[观察者网 · 刘希融访邓煜](https://www.sohu.com/a/1072800937_115479)。
+**暑期论文、纽约的去留和洛杉矶的合作**：[Quanta · Jordana Cepelewicz 访邓煜、亲友与同行](https://www.quantamagazine.org/yu-deng-wins-the-fields-medal-2026-for-his-work-on-the-random-data-problem-20260723/)；[北京大学校友网 · 专访北大校友邓煜](https://pku.org.cn/info/1013/48982.htm)；[每日经济新闻 · 对话邓煜](https://www.nbd.com.cn/rss/zaker/articles/4552917.html)；[观察者网 · 刘希融访邓煜](https://www.sohu.com/a/1072800937_115479)。
 
-**黑板前的讨论、哈尼的劝说、马骁的算法与巴黎读稿：**[Quanta · Jordana Cepelewicz 访邓煜、亲友与同行](https://www.quantamagazine.org/yu-deng-wins-the-fields-medal-2026-for-his-work-on-the-random-data-problem-20260723/)；[每日经济新闻 · 访颜晓川、孙鑫、哈尼与马骁](https://www.nbd.com.cn/articles/2026-07-21/4490442.html)；[中国科大校友总会 · 马骁回忆合作的起点](https://aga.ustc.edu.cn/info/1197/35771.htm)；[DeepTech 对话马骁 · 从波到粒子，怎样拆碰撞图](https://www.sohu.com/a/1057838898_211762)；[Quanta · Leila Sloman 访气体研究的作者及同行](https://www.quantamagazine.org/epic-effort-to-ground-physics-in-math-opens-up-the-secrets-of-time-20250611/)；[《数学年刊》· 邓煜、娜莫德、岳海天合著论文](https://annals.math.princeton.edu/2024/200-2/p01)。
+**黑板前的讨论、哈尼的劝说、马骁的算法与巴黎读稿**：[Quanta · Jordana Cepelewicz 访邓煜、亲友与同行](https://www.quantamagazine.org/yu-deng-wins-the-fields-medal-2026-for-his-work-on-the-random-data-problem-20260723/)；[每日经济新闻 · 访颜晓川、孙鑫、哈尼与马骁](https://www.nbd.com.cn/articles/2026-07-21/4490442.html)；[中国科大校友总会 · 马骁回忆合作的起点](https://aga.ustc.edu.cn/info/1197/35771.htm)；[DeepTech 对话马骁 · 从波到粒子，怎样拆碰撞图](https://www.sohu.com/a/1057838898_211762)；[Quanta · Leila Sloman 访气体研究的作者及同行](https://www.quantamagazine.org/epic-effort-to-ground-physics-in-math-opens-up-the-secrets-of-time-20250611/)；[《数学年刊》· 邓煜、娜莫德、岳海天合著论文](https://annals.math.princeton.edu/2024/200-2/p01)。
 
-**邓煜谈菲尔兹奖、收入和选题：**[国际数学联盟 · 2026年菲尔兹奖](https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2026)；[央视《面对面》· 邓煜获奖后长访谈](https://m.thepaper.cn/newsDetail_forward_33796468)；[每日经济新闻 · 对话邓煜](https://www.nbd.com.cn/rss/zaker/articles/4552917.html)。
+**邓煜谈菲尔兹奖、收入和选题**：[国际数学联盟 · 2026年菲尔兹奖](https://www.mathunion.org/imu-awards/fields-medal/fields-medals-2026)；[央视《面对面》· 邓煜获奖后长访谈](https://m.thepaper.cn/newsDetail_forward_33796468)；[每日经济新闻 · 对话邓煜](https://www.nbd.com.cn/rss/zaker/articles/4552917.html)。
 
-**诗作旁记：**邓煜本科毕业时写过一首《毕业自题》，末两句是“何处更寻萌软妹，几回独对紧流形”。见[《N面邓煜》](https://www.baoanone.com/content220487.html)。
+**诗作旁记**：邓煜本科毕业时写过一首《毕业自题》，末两句是“何处更寻萌软妹，几回独对紧流形”。见[《N面邓煜》](https://www.baoanone.com/content220487.html)。
 
 </details>
