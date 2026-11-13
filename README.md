@@ -9,11 +9,18 @@
 ## 作品示例
 
 <p>
-<a href="#创意文案案例取经团队裁员"><img src="docs/images/example-creative.svg" alt="创意文案：《经还在西边》，取经团队裁员中的五个人物陈述" width="400"></a>
-<a href="#文学写作案例周一见"><img src="docs/images/example-literary.svg" alt="文学写作：《周一见》，一段实习期间的含混关系" width="400"></a>
+<a href="#创意文案案例取经团队裁员"><img src="docs/images/example-creative.svg" alt="创意文案：《经还在西边》，取经团队裁员中的五个人物陈述" width="31%"></a>
+<a href="#文学写作案例周一见"><img src="docs/images/example-literary.svg" alt="文学写作：《周一见》，一段实习期间的含混关系" width="31%"></a>
+<a href="examples/deng-yu/README.md"><img src="docs/images/example-profile.svg" alt="纪实人物特写：《邓煜：以数学为生》" width="31%"></a>
 </p>
 
-两篇均为经过多轮修改的虚构作品，不代表单条提示词的一次生成。
+前两篇为虚构作品，第三篇是依据公开采访写成的人物特写。三篇均经过多轮修改。
+
+### 纪实人物特写：[《邓煜：以数学为生》](examples/deng-yu/README.md)
+
+拿到奥数金牌后，他决定读数学。多年后，已经靠数学谋生的他，却认真考虑过去金融公司工作。文章从围棋老师、家人和合作者的回忆，写到他自己怎样看待这两次选择。
+
+[阅读全文与采访出处](examples/deng-yu/README.md) · [离线 HTML](examples/deng-yu/story.html)
 
 ## 创意文案案例：取经团队裁员
 

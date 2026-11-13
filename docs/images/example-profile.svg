@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">纪实人物特写：邓煜，以数学为生</title>
+  <desc id="desc">据公开采访写成的数学家邓煜人物稿，含全文与来源。</desc>
+  <rect width="640" height="400" fill="#f4f8f5"/>
+  <rect width="8" height="400" fill="#34594d"/>
+  <g font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+    <text x="36" y="54" font-size="28" font-weight="600" fill="#34594d">纪实写作 / 人物特写</text>
+    <text x="36" y="140" font-size="51" font-weight="700" fill="#202527">邓煜：以数学为生</text>
+    <text x="36" y="193" font-size="28" fill="#516359">一位数学家的选择与犹豫。</text>
+    <path d="M36 228H604" stroke="#bfcec5"/>
+    <g font-size="30" fill="#202527">
+      <text x="36" y="283">“我不在乎有多少钱。”</text>
+      <text x="36" y="332" font-size="26">2009年，回深圳看望围棋老师时</text>
+    </g>
+    <text x="36" y="377" font-size="24" fill="#516359">阅读全文 · 采访出处</text>
+  </g>
+</svg>
