@@ -1,6 +1,6 @@
 # 邓煜：以数学为生
 
-[下载离线刊物版 HTML](https://raw.githubusercontent.com/BobbyYue/writer-pen/main/examples/deng-yu/story.html)
+[写作提示词（多轮整理）](writing-prompt.md) · [采访与资料出处](#采访与资料出处) · [下载离线刊物版 HTML](https://raw.githubusercontent.com/BobbyYue/writer-pen/main/examples/deng-yu/story.html)
 
 ## 他决定读数学
 
