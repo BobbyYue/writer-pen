@@ -432,7 +432,8 @@ class DevelopmentResponseTests(unittest.TestCase):
             self.assertEqual(item['type'], 'object')
             self.assertEqual(set(item['required']), {'before_quote', 'after_quote', 'observation', 'disposition', 'finding_ids', 'comparison'} |
                              ({'baseline_evidence'} if name == 'revision_effects' else set()))
-            self.assertEqual(set(item['properties']), set(item['required']))
+            self.assertEqual(set(item['properties']), set(item['required']) | {'support_level'})
+            self.assertNotIn('support_level', item['required'])
             self.assertEqual(item['properties']['disposition'], schema['properties']['disposition'])
             self.assertEqual(item['properties']['finding_ids'], schema['properties']['finding_ids'])
             for key in ('before_quote', 'after_quote', 'observation'):

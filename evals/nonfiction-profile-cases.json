@@ -1,0 +1,65 @@
+{
+  "format_version": 1,
+  "material": "synthetic",
+  "instructions": "Give a fresh executor only one prompt and the skill path. Keep observations with the evaluator. Judge the actual prose or diagnosis, not headings, keywords, deletion count or a required personality. These fictional test records stand in for documentary source material; they are not claims about real people.",
+  "cases": [
+    {
+      "id": "profile_interaction_with_limits",
+      "prompt": "以下是合成的采访素材，按纪实人物特写的方式写一个不超过400字的片段，只在聊天中给纯文本，不新增事实：自行车修理工陆琴做这行十八年，去年拿过一次区里的服务奖。记者见到一位顾客说刹车没有修好，陆琴没有先回答，推车到门口试骑，回来把没调好的螺丝重新调过，没有再收钱。学徒说可以替她收尾，她把扳手递过去，却留在旁边看着。顾客走后，她让学徒把同一处再调一遍。采访中她说：我不是怕他做坏，是怕他还没看出来哪里没做好。没有其他现场记录。",
+      "observations": [
+        "Use the interaction and response rather than the award as the main characterization evidence",
+        "Allow care, standards, trust and control to coexist without forcing one fixed interpretation",
+        "Do not invent the customer's emotions, a past hardship, scenery or dialogue",
+        "Preserve a coherent small scene without mechanically printing a step template"
+      ]
+    },
+    {
+      "id": "necessary_context_and_direct_feeling",
+      "prompt": "只诊断，不改正文。这是一篇纪实人物稿的片段，以下均有采访依据：2019年，他第一次带学徒。那台旧机器必须先断电。学徒伸手去碰开关，他把人拦住，自己又检查了一遍。他后来回忆：我当时很害怕，怕他像我年轻时那样受伤。十年前，他曾在同类机器上伤过手。编辑建议删掉必须先断电、采访里的害怕和十年前的经历，认为解释和心理描写都有AI味，只留拦住人的动作。你怎么看？",
+      "observations": [
+        "Retain enough context to interpret the intervention",
+        "Distinguish sourced first-person memory from a redundant author-imposed emotion label",
+        "Do not ban emotion words or manufacture replacement actions",
+        "Respect diagnosis-only scope"
+      ]
+    },
+    {
+      "id": "limited_record_not_invented_conversion",
+      "prompt": "请给出人物特写的选材和结构建议，不写全文。合成资料只有三项：受访者2016年考虑退出研究；2017年与同事讨论了一次；2019年发表新成果。他说不记得讨论原话，也没有说自己为何改变决定。作者想补一场深夜对谈，让同事的一句话使他重拾信心，并在结尾说他再也没有怀疑自己。怎样处理？",
+      "observations": [
+        "Do not infer persuasion content or permanent psychological change from event order",
+        "Suggest genuine follow-up evidence, a better-supported episode or a narrower account",
+        "Do not use a fiction disclaimer to authorize invention in a documentary profile",
+        "Avoid replacing the proposed invented scene with a different unsupported scene"
+      ]
+    },
+    {
+      "id": "ordinary_life_without_forced_tragedy",
+      "prompt": "根据这些合成采访记录，给一篇短人物特写拟一个切入角度和两段正文，只给纯文本，不增加事件：社区书屋管理员周宁每周整理退还的书。新来的志愿者把儿童画夹在书里归还，她先把画平放在桌上，再把书入架。下周孩子来取，她让孩子自己从桌上的几张画里认。她说不愿在画上写孩子姓名，因为有人不喜欢别人知道自己画了什么。记录里没有争吵、挫折、获奖或离别。",
+      "observations": [
+        "Find character through the recorded handling of objects and other people",
+        "Do not add suffering, opposition or a conversion arc to make a profile feel dramatic",
+        "Do not manufacture a second occurrence of the same gesture for a mandatory callback",
+        "Keep the ending grounded rather than adding a general moral or private motive"
+      ]
+    },
+    {
+      "id": "profile_chapter_title_and_relocated_detail",
+      "prompt": "只给这节人物稿的编辑意见，不写全文。《第一次掌舵》草稿说：许岑在排练室学得快，两周就记熟总谱，领班让她把指定曲目排了一遍。她会画漫画，常把同事画在节目单背面。有同事记得，有一回她主动问，下一季能不能多排本地作曲家的作品，记录到此为止。另有一节写她与同事日常相处。标题和选材该怎么处理？",
+      "observations": [
+        "Distinguish executing the assigned program and expressing a preference from making a programming decision; narrow the promise or identify the missing evidence",
+        "Consider moving the cartoons to the relationships chapter rather than inventing an artistic turning point or purging all incidental details",
+        "Respect the diagnostic scope and allow multiple defensible titles"
+      ]
+    },
+    {
+      "id": "profile_retrospective_and_multiple_readings",
+      "prompt": "给编辑一份简短改稿意见。年表写着顾青连续担任社区厨房负责人十年，去年获奖。草稿结尾写：从来没人能动摇她办下去的决心。三年前的排班本却写着她曾提议停掉周六晚餐；厨师指出夜班护士只在那一顿能赶上，顾青同意先保留两周，但周日不再开门，后续记录缺失。读者甲记得她肯听厨师的，乙记得她仍给厨房划了限度。作者想让两个人都读出她做慈善从不犹豫。如何取舍？",
+      "observations": [
+        "Use contemporary evidence to qualify the retrospective ending; do not turn reducing a service into abandoning the whole kitchen or infer what happened after the trial",
+        "Preserve both parties' reasons when documented and do not manufacture Gu's unknown private motive",
+        "Recognize two different text-supported readings rather than enforcing the intended virtue"
+      ]
+    }
+  ]
+}

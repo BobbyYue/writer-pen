@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.8.0 - 2026-11-16
+
+- Add the nonfiction profile guidance and synthetic cases. Compare the impression left by a résumé with source-backed decisions, test chapter titles against the actions on the page, and distinguish editorial fact checks from independent reader interpretations.
+- Sync the installed reader-effects guidance, feedback handling, study tooling and tests. No additional scoring system or review round is required for profiles.
+- Organize the homepage around three examples, installation and revision methods. Keep the original prompts and full texts on the example pages.
+
 ## 2.7.0 - 2026-11-03
 
 - Integrate seven general creative-copywriting methods into the existing planning, material selection, organization, revision and final-reading workflow. They guide editorial choices rather than mandate one structure, voice or answer.

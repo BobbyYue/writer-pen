@@ -1,0 +1,20 @@
+{
+  "purpose": "Synthetic forward tests; observations are withheld from the executing agent. No user manuscripts are included.",
+  "cases": [
+    {
+      "id": "useful_modifier",
+      "prompt": "用 writer-pen 诊断这个散文片段：‘父亲睡下以后，我把门轻轻带上。到了楼道，才敢把憋着的咳嗽咳出来。’看看原意是否清楚、词句是否需要改。只诊断，不改正文、不生成文件。",
+      "observations": ["Judge the modifier in relation to the later action, not its word class.", "Do not invent illness or family history.", "Allow a useful original to remain without manufacturing a rewrite or score."]
+    },
+    {
+      "id": "unsupported_action",
+      "prompt": "用 writer-pen 评价这个写实短篇片段的人物行动是否成立，给0/1/2支撑等级并说明原文依据：‘我和她只在电梯里见过两次。今天她第一次问我住哪一层，我说十七楼，她笑了一下。晚上我就退掉了租房合同，准备下周搬去她家。我知道她一定愿意与我生活。’只评价，不续写、不生成文件。",
+      "observations": ["Locate the unsupported inference and consequential action.", "Do not confuse readable sentences with supported development.", "Offer context-sensitive choices without inventing mutual agreement as a supplied fact.", "No literary total or mandatory rational character; evaluation follows the stated realist context."]
+    },
+    {
+      "id": "open_interpretation",
+      "prompt": "用 writer-pen 读这个片段，说明读到了什么、怎么理解、还有什么不能确定，以及阅读感受：‘车站打来电话，说储物柜到期了。母亲把钥匙放进抽屉，又取出来，装进外套口袋。第二天，她没有穿那件外套。’只回读，不修改、不生成文件。",
+      "observations": ["Separate stated actions from possible motives.", "Do not assert grief, a death, or a particular family history as fact.", "Allow more than one text-grounded interpretation and report uncertainty.", "Do not require an explanatory final sentence merely because the motive is open."]
+    }
+  ]
+}

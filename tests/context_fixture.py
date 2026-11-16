@@ -10,7 +10,8 @@ def structural_basis():
 
 
 def structural_reading(text):
-    return {'understanding': {'observation': 'STRUCTURAL FIXTURE understanding, not actual reading', 'quote': text},
+    return {'understanding': {'observation': 'STRUCTURAL FIXTURE understanding, not actual reading', 'quote': text,
+                             'readings': [{'kind': 'uncertain', 'claim': 'STRUCTURAL FIXTURE, not actual reading', 'quote': text}]},
             'experience': {'observation': 'STRUCTURAL FIXTURE experience, not human engagement', 'quote': text,
                            'disposition': 'no-change', 'finding_ids': []}}
 

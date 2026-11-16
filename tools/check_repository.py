@@ -17,7 +17,10 @@ def main():
                 "agents/openai.yaml", "config/package.json", ".github/workflows/tests.yml",
                 "examples/zhou-yi-jian/prompt.txt", "examples/zhou-yi-jian/rewrite-prompt.txt",
                 "examples/zhou-yi-jian/story.txt", "examples/zhou-yi-jian/story.html",
-                "examples/zhou-yi-jian/README.md", "docs/known-limitations.md"]
+                "examples/zhou-yi-jian/README.md", "docs/known-limitations.md",
+                "examples/journey-team/README.md", "examples/deng-yu/README.md",
+                "docs/images/example-creative.svg", "docs/images/example-profile.svg",
+                "docs/images/example-literary.svg", "references/nonfiction-profile.md"]
     for name in required:
         if not (ROOT / name).is_file():
             errors.append("Missing public file: " + name)
@@ -52,14 +55,18 @@ def main():
         if version != package["version"]:
             errors.append("VERSION differs from config/package.json")
         readme = (ROOT / "README.md").read_text()
+        for slug in ("zhou-yi-jian", "deng-yu", "journey-team"):
+            if f"](examples/{slug}/README.md)" not in readme:
+                errors.append("Missing homepage example link: " + slug)
+        example_page = (EXAMPLE / "README.md").read_text()
         prompt = (EXAMPLE / "prompt.txt").read_text().strip()
         story = (EXAMPLE / "story.txt").read_text().strip()
         title, body = story.split("\n\n", 1)
         expected = {"prompt": "```text\n" + prompt + "\n```", "story": "### " + title + "\n\n" + body}
         for kind, value in expected.items():
             start, end = "<!-- example:" + kind + ":start -->", "<!-- example:" + kind + ":end -->"
-            if readme.count(start) != 1 or readme.count(end) != 1 or readme.split(start)[-1].split(end)[0].strip() != value:
-                errors.append("README differs from the example file: " + kind)
+            if example_page.count(start) != 1 or example_page.count(end) != 1 or example_page.split(start)[-1].split(end)[0].strip() != value:
+                errors.append("Novel example page differs from the example file: " + kind)
         if sum(not char.isspace() for char in story) > 1000:
             errors.append("Example exceeds the requested character limit")
         if "整理" not in (EXAMPLE / "rewrite-prompt.txt").read_text():

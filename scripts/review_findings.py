@@ -36,6 +36,10 @@ GUIDANCE = (
     'to stable unique IDs in issues and verdict must be fail; editorial must link '
     'to IDs in editorial. Do not reuse linked IDs across finding categories. '
     'Each check also returns comparison {needed:boolean, reason:nonempty text, trial:object|null}. '
+    'Only when explicitly asked for diagnostic levels, a check may add support_level '
+    '(integer 0/1/2 or null): 0 evidenced reading break, 1 an unresolved link or choice, '
+    '2 a text-supported reading, null only for not-applicable. Reuse the observation '
+    'and quotes as its rationale. Do not average levels or derive verdict from them. '
     'When needed is true and disposition is supported, supply a real trial with current, '
     'alternative, gain, loss and attention_cost. trial.current must include a checked '
     'quote and the actual edit context. For paragraph_rhythm it must include BOTH '
@@ -64,7 +68,13 @@ GUIDANCE = (
     'belongs only to professional review; readers receive no source materials or '
     'author choices and must not return development_response. '
     'Readers must return reading_response: understanding and experience each '
-    'contain observation and an exact quote. Experience also contains disposition '
+    'contain observation and an exact quote. Understanding additionally contains '
+    'a nonempty readings list of {kind,claim,quote}, with kind explicit (stated in '
+    'the text), inference (your reading), or uncertain (not resolved). Record only '
+    'consequential readings; not every sentence or every kind is required. Anchor '
+    'each in the current text, and attribute a narrator claim rather than treating '
+    'it as confirmed story-world fact. A different supported interpretation or '
+    'preference is not automatically an error. Experience also contains disposition '
     '(no-change/editorial/suggestion) and finding_ids referencing the matching '
     'editorial or suggestions entries. Understanding does not prove engagement. '
     'An unengaged or uncertain response is valid; never invent praise, symbolism, '
@@ -76,9 +86,13 @@ GUIDANCE = (
 _TEXT = {'type': 'string', 'minLength': 1}
 _FINDING = {'type': 'object', 'required': ['id', 'impact', 'reason', 'quote'],
             'properties': {name: _TEXT for name in ('id', 'impact', 'reason', 'quote')}}
+_READING = {'type': 'object', 'required': ['kind', 'claim', 'quote'],
+            'properties': {'kind': {'enum': ['explicit', 'inference', 'uncertain']},
+                           'claim': _TEXT, 'quote': _TEXT}}
 _RESPONSE = {'type': 'object', 'required': ['understanding', 'experience'], 'properties': {
-    'understanding': {'type': 'object', 'required': ['observation', 'quote'],
-                      'properties': {'observation': _TEXT, 'quote': _TEXT}},
+    'understanding': {'type': 'object', 'required': ['observation', 'quote', 'readings'],
+                      'properties': {'observation': _TEXT, 'quote': _TEXT,
+                          'readings': {'type': 'array', 'minItems': 1, 'items': _READING}}},
     'experience': {'type': 'object', 'required': ['observation', 'quote', 'disposition', 'finding_ids'],
                    'properties': {'observation': _TEXT, 'quote': _TEXT,
                        'disposition': {'enum': ['no-change', 'editorial', 'suggestion']},
@@ -91,6 +105,7 @@ _DEVELOPMENT_CHECK = {'type': 'object',
                       'required': ['before_quote', 'after_quote', 'observation', 'disposition', 'finding_ids', 'comparison'],
                       'properties': {'before_quote': _TEXT, 'after_quote': _TEXT, 'observation': _TEXT,
                           'disposition': _DEVELOPMENT_DISPOSITION,
+                          'support_level': {'anyOf': [{'type': 'integer', 'enum': [0, 1, 2]}, {'type': 'null'}]},
                           'finding_ids': {'type': 'array', 'items': _TEXT},
                           'comparison': {'type': 'object', 'required': ['needed', 'reason', 'trial'],
                               'properties': {'needed': {'type': 'boolean'}, 'reason': _TEXT,
@@ -184,7 +199,8 @@ def validate_working_title(value):
 
 
 def reading_template():
-    return {'understanding': {'observation': '', 'quote': ''},
+    return {'understanding': {'observation': '', 'quote': '',
+                             'readings': [{'kind': '', 'claim': '', 'quote': ''}]},
             'experience': {'observation': '', 'quote': '', 'disposition': '', 'finding_ids': []}}
 
 
@@ -267,6 +283,12 @@ def validate_development(body, text=None, role='professional', baselines=None):
         errors.extend(_validate_development_item(body, item, text, label, ('before_quote', 'after_quote')))
         if not isinstance(item, dict):
             continue
+        if 'support_level' in item:
+            level = item['support_level']
+            if level is not None and (type(level) is not int or level not in (0, 1, 2)):
+                errors.append(label + '.support_level must be 0, 1, 2 or null')
+            if (level is None) != (item.get('disposition') == 'not-applicable'):
+                errors.append(label + '.support_level null is reserved for not-applicable')
         comparison = item.get('comparison')
         if not isinstance(comparison, dict) or type(comparison.get('needed')) is not bool:
             errors.append(label + '.comparison needs an explicit needed boolean')
@@ -355,6 +377,23 @@ def validate_reading(body, text=None):
                 errors.append('reading_response.' + key + '.' + name + ' must be nonempty text')
         if text is not None and isinstance(item.get('quote'), str) and item['quote'] not in text:
             errors.append('reading_response.' + key + '.quote is not in the current draft')
+    understanding = value.get('understanding')
+    readings = understanding.get('readings') if isinstance(understanding, dict) else None
+    if not isinstance(readings, list) or not readings:
+        errors.append('reading_response.understanding.readings must record text-based readings')
+    else:
+        for index, reading in enumerate(readings):
+            label = 'reading_response.understanding.readings[' + str(index) + ']'
+            if not isinstance(reading, dict):
+                errors.append(label + ' must be an object')
+                continue
+            if reading.get('kind') not in ('explicit', 'inference', 'uncertain'):
+                errors.append(label + '.kind must be explicit, inference or uncertain')
+            for field in ('claim', 'quote'):
+                if not isinstance(reading.get(field), str) or not reading[field].strip():
+                    errors.append(label + '.' + field + ' must be nonempty text')
+            if text is not None and isinstance(reading.get('quote'), str) and reading['quote'] not in text:
+                errors.append(label + '.quote is not in the current draft')
     experience = value.get('experience')
     if not isinstance(experience, dict):
         return errors

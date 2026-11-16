@@ -153,7 +153,7 @@ The reader additionally returns the packet's `reading_response`:
 
 ```json
 {
-  "understanding": {"observation": "What this reader understood, including uncertainty", "quote": "Exact current text"},
+  "understanding": {"observation": "What this reader understood, including uncertainty", "quote": "Exact current text", "readings": [{"kind": "inference", "claim": "A consequential interpretation", "quote": "Exact supporting current text"}]},
   "experience": {"observation": "Where attention, interest or distance arose; no praise required", "quote": "Exact current text", "disposition": "no-change", "finding_ids": []}
 }
 ```
@@ -171,6 +171,15 @@ Unperformed comparisons remain linked editorial/blocking work, not a pass.
 `revision_effects` also returns `baseline_evidence: [{id, sha256, quote, reason}]`
 from the supplied designated source and previous candidate when present. An
 original work without either uses an empty list, never an invented earlier draft.
+
+Reader `understanding.readings` is a nonempty list; each entry distinguishes
+`explicit`, `inference` or `uncertain` with a claim and exact current-text quote.
+Do not require all three kinds or one reading per sentence. Different supported
+interpretations are not errors; record understanding separately from preference.
+Only on an explicit diagnostic-rating request may a professional check add
+`support_level` (integer 0/1/2; null only for not-applicable), as defined in
+[reader effects](reader-effects.md). Reuse its existing observation and quotes;
+do not turn levels into a total, a verdict or a new review round.
 
 Use `supported`, `blocker`, `editorial`, or `not-applicable`. A blocker references
 nonempty stable IDs in this return's `issues` and requires a failing verdict;

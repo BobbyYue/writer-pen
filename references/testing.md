@@ -30,6 +30,10 @@ HTML维护同时运行`test_html_output.py`：合成材料验证题名、字词�
 
 ## 正文行为测试
 
+[阅读取证与量化案例](../evals/reader-effects-cases.json)检查有效副词、行动依据缺口和有依据的开放解读。只发单个 prompt 与 skill 路径，不把 observations 或作者答案给执行者；不因保留原句或发现问题而预置分数。`test_reader_effects.py`覆盖读法分类与当前引文的必填、所有现有接收入口拒绝遗漏、按需等级、同版本反馈统计、真人/模型分组以及未答项不被移出分母。等级和计算通过不等于文学效果成立；单次独立试读与真人反馈分别记录。原有七个专业检查项和三轮上限不增加。
+
+人物特写使用 [nonfiction-profile-cases.json](../evals/nonfiction-profile-cases.json)：观察真实互动怎样写出人、必要背景与直接心理能否保留、缺失因果是否被虚构补齐，以及平静日常是否被强造悲剧。仅给执行者单个 prompt 与 skill 路径，不给 observations；按实际成稿或诊断判断，不以出现情绪词、对话数量或少议论直接判好坏。未运行的案例只记为已添加，不称已验证。
+
 创意文案通用方法的迁移使用 [creative-copywriting-cases.json](../evals/creative-copywriting-cases.json) 中的
 `general_material_selection_and_relation`、`local_compression_preserves_needed_context` 与 `intentional_refrain_and_explicit_structure`。
 分别观察选材与组织是否超出材料罗列、压缩是否保留理解前提，以及显式复沓和共同结构是否被误删。
